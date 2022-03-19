@@ -61,5 +61,11 @@ h1 chứa thông tin văn bản quan trọng hơn
 ```
 thẻ p là thẻ chứa đoạn văn
 ```
+# thẻ img hình ảnh
+```
+thẻ hình ảnh img có thuộc tính src chứa đường dẫn của ảnh
+có thuộc tính là alt="" hiển thị nội dung khi mà trình duyệt
+không thể hiển thị hình ảnh ( vd mất ảnh )
+```
 
 
