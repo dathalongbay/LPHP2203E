@@ -13,19 +13,39 @@
         <form name="tiki" method="post" action="">
             <p>
                 <label for="">Tên đăng ký</label>
-                <input type="text" name="hoten" value="" placeholder="Nhập họ tên của bạn vào đây">
+                <input type="text" name="hoten" value="thanh" placeholder="Nhập họ tên của bạn vào đây">
             </p>
             <p>
                 <label for="">Email</label>
-                <input type="email" name="thudientu" value="" placeholder="Nhập email">
+                <input type="email" name="thudientu" value="thanh@gmail.com" placeholder="Nhập email">
             </p>
             <p>
                 <label for="">SDT</label>
-                <input type="text" name="sdt" value="" placeholder="Nhập sdt">
+                <input type="text" name="sdt" value="098747474" placeholder="Nhập sdt">
             </p>
             <p>
                 <label for="">Tuổi</label>
-                <input type="number" name="tuoi" value="" placeholder="Nhập tuoi">
+                <input type="number" name="tuoi" value="20" placeholder="Nhập tuoi">
+            </p>
+            <p>
+                <label for="">Ghi chú</label>
+                <textarea name="ghichu" id="ghichu" cols="30" rows="10"></textarea>
+            </p>
+
+            <p>
+                <label for="">Giới tính</label>
+                <input type="radio" name="gioitinh" value="nam" /> Nam
+                <input type="radio" name="gioitinh" value="nu" /> Nữ
+            </p>
+
+            <p>
+                <label for="">Tỉnh</label>
+                <select name="tinh">
+                    <option value="">Chọn tỉnh</option>
+                    <option value="hn">Hà nội</option>
+                    <option value="hcm">Hồ chí minh</option>
+                    <option value="dn">Đà nẵng</option>
+                </select>
             </p>
         </form>
     </div>

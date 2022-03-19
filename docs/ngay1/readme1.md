@@ -205,7 +205,28 @@ value="" giá trị của input
 placeholder="" chứa gợi ý cho người dùng biết khi mà input rỗng
 ```
 # input type="email" phải theo format tenmail@domain vd abc@gmail.com
-# input type="number" là input chứa số
+# input type="number" là input chứa số 
+# textarea
+```
+<textarea name="ghichu" id="ghichu" cols="30" rows="10"></textarea>
+cols là số cột
+rows là số hàng
+```
+# input type="radio"
+```
+<input type="radio" name="gioitinh" value="nam" /> Nam
+<input type="radio" name="gioitinh" value="nu" /> Nam
+```
+# select
+```
+ <select name="tinh">
+    <option value="">Chọn tỉnh</option>
+    <option value="hn">Hà nội</option>
+    <option value="hcm">Hồ chí minh</option>
+    <option value="dn">Đà nẵng</option>
+</select>
+```
+
 
 
 
