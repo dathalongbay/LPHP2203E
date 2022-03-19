@@ -75,5 +75,7 @@ https://www.w3schools.com
 ```
 là thẻ xuống hàng là 1 thẻ đặc biệt không có thẻ đóng
 ```
+# thẻ a là thẻ liên kết của thuộc tính href chứa liên kết
+
 
 
