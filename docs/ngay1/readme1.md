@@ -67,5 +67,13 @@ thẻ hình ảnh img có thuộc tính src chứa đường dẫn của ảnh
 có thuộc tính là alt="" hiển thị nội dung khi mà trình duyệt
 không thể hiển thị hình ảnh ( vd mất ảnh )
 ```
+# giới thiệu w3school
+```
+https://www.w3schools.com
+```
+# thẻ br
+```
+là thẻ xuống hàng là 1 thẻ đặc biệt không có thẻ đóng
+```
 
 
