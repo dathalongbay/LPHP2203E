@@ -119,6 +119,18 @@ ví dụ :
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 ```
+# thẻ table thẻ bảng 
+```
+được dùng để tạo bảng
+trong bảng có thẻ tr tạo bảng
+thẻ td tạo cột 
+```
+```
+bảng phức tạp hơn 1 chút 
+thead và tbody 
+thead là phần đầu của bảng 
+tbody chứa phần thân của bảng
+```
 
 
 
