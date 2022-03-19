@@ -178,6 +178,36 @@ solid là kiểu viền liền mạch
 ```
 # thẻ td là cột thẻ tr là hàng 
 # thẻ th thay cho td trong hàng đầu tiên của bảng để tạo cột 
+# thẻ div là 1 thẻ khối dùng để chứa nhiều thẻ khác bên trong
+# thẻ form là 1 thẻ biểu mẫu để nhập nhiều thông tin
+```
+các thuộc tính của form
+name là tên của form
+method là phương thức gửi form (get hay post)
+action là đích đến của thông tin khi chúng ta submit gửi form đi
+nếu action="" thì form khi submit sẽ gửi thông tin đến chính trang hiện tại
+```
+```
+<form name="tiki" method="post" action="http://tiki.vn/dang-ky">
+    Nội dung của biểu mẫu
+</form>
+```
+# thẻ label trong thẻ form là thẻ nhãn nằm trước thẻ input để biết thẻ input phải nhập gì
+# thẻ input text
+```
+<input type="text" name="hoten" value="" placeholder="Nhập họ tên của bạn vào đây">
+```
+giải thích
+```
+type="text" kiểu là văn bản
+name="" tên của input
+value="" giá trị của input 
+placeholder="" chứa gợi ý cho người dùng biết khi mà input rỗng
+```
+# input type="email" phải theo format tenmail@domain vd abc@gmail.com
+# input type="number" là input chứa số
+
+
 
 
 
