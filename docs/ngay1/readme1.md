@@ -226,6 +226,27 @@ rows là số hàng
     <option value="dn">Đà nẵng</option>
 </select>
 ```
+# phần mềm cài đặt cho buổi 1 và 2
+```
+1 visual code 
+https://code.visualstudio.com/
+```
+![image](https://user-images.githubusercontent.com/6966136/159124887-4680d97a-8476-4057-b86a-a413e54c837a.png)
+```
+2 gitbash
+https://git-scm.com/downloads
+```
+```
+3 github desktop https://desktop.github.com/
+```
+![image](https://user-images.githubusercontent.com/6966136/159124925-2bc31d19-68aa-4a63-8440-0f5340c3936d.png)
+```
+4 octotree
+https://chrome.google.com/webstore/detail/octotree-github-code-tree/bkhaagjahfmjljalopjnoealnfndnagc?hl=vi
+```
+![image](https://user-images.githubusercontent.com/6966136/159124941-d4b88d2e-8990-4660-aff5-a715d164852c.png)
+
+
 
 
 
