@@ -76,6 +76,31 @@ https://www.w3schools.com
 là thẻ xuống hàng là 1 thẻ đặc biệt không có thẻ đóng
 ```
 # thẻ a là thẻ liên kết của thuộc tính href chứa liên kết
+# style css trong html 
+```
+dùng thuộc tính có tên là style trong 1 thẻ bất kỳ 
+cú pháp style="tên_thuộc_tính_css:giá_trị_của_thuộc_tính_css;tên_thuộc_tính_css2:giá_trị_của_thuộc_tính_css2;tên_thuộc_tính_css3:giá_trị_của_thuộc_tính_css3"
+```
+ví dụ 
+```
+<p style="color:red;font-size: 15px;background-color: green;">Thẻ p số 1</p>
+
+<p style="color:yellow;font-size: 32px;background-color: gray;">Thẻ p số 2</p>
+
+<p style="color:#ccc;font-size: 32px;background-color: rgb(255,255,0);">Thẻ p số 2</p>
+```
+note :
+```
+- thuộc tính css đầu tiên là color có 1 số định dạng màu theo tên
+vd green, yellow, red ...
+định dạng hex bắt đầu = chữ # ví dụ #ccc #fff
+định dạng rgb ví dụ rgb(255,255,0)
+- thuộc tính font-size là kích cỡ văn bản vd font-size:32px
+- thuộc tính background-color là màu nền
+chú ý giữa các cặp tên thuộc tính và giá trị có dấu :
+đồng thời phân tách các thuộc tính = dấu ;
+```
+
 
 
 
