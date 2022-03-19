@@ -51,5 +51,15 @@ chủ yếu hỗ trợ seo
 - thẻ body thẻ phần thân chứa các nội dung văn bản và các thẻ con
 cho phép người dùng nhìn thấy
 ```
+# thẻ heading h1 - h6
+```
+6 thẻ này chứa nội dung quan trọng của văn bản bên trong
+h1 chứa thông tin văn bản quan trọng hơn 
+2 - h6 chứa thông tin ít quan trọng và giảm dần
+```
+# thẻ p
+```
+thẻ p là thẻ chứa đoạn văn
+```
 
 
