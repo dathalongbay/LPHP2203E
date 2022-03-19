@@ -160,7 +160,24 @@ selector đơn giản nhất là theo tên thẻ
     </style>
 </head>
 ```
-
+# gom nhóm bộ chọn trong css dùng , vd h1,h2,h3 {color:red;}
+```
+h1,h2,h3 {
+    color:red;
+}
+```
+# thuộc tính css border đường viền
+```
+cú pháp : 
+border:độ_rộng kiểu_border màu_viền;
+ví dụ 
+td {
+    border: 3px solid green;
+}
+solid là kiểu viền liền mạch
+```
+# thẻ td là cột thẻ tr là hàng 
+# thẻ th thay cho td trong hàng đầu tiên của bảng để tạo cột 
 
 
 
