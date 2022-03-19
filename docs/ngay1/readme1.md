@@ -100,6 +100,25 @@ vd green, yellow, red ...
 chú ý giữa các cặp tên thuộc tính và giá trị có dấu :
 đồng thời phân tách các thuộc tính = dấu ;
 ```
+# comment chú thích trong html
+hỗ trợ lập trình viên hiểu được đoạn code phía sau viết gì
+``` cú pháp <!-- nội dung comment --> ```
+ví dụ :
+```
+<!-- ROBOTS -->
+<meta name="googlebot" content="noarchive" />
+<meta name="robots" content="noarchive" />
+
+<!-- FACEBOOK OPEN GRAPH -->
+<meta property="fb:app_id" content="2034212100232051" />
+<meta property="og:site_name" content="ZingNews.vn" />
+<meta property="og:rich_attachment" content="true" />
+<meta property="article:publisher" content="https://www.facebook.com/zing.vn" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://znews-photo-fbcrawler.zadn.vn/w1250/Uploaded/ofh_huqfztmf/2022_03_19/2_1.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+```
 
 
 
