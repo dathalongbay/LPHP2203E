@@ -131,6 +131,36 @@ thead và tbody
 thead là phần đầu của bảng 
 tbody chứa phần thân của bảng
 ```
+# học selector trong css là gì ?
+```
+selector là bộ chọn trong css để chọn đúng cái thẻ mà css muốn style 
+selector đơn giản nhất là theo tên thẻ 
+```
+#  internal style css dùng thẻ style trong head
+```
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- viết mã css internal trong thẻ style -->
+    <style type="text/css">
+        h1 {
+            color: red;
+            background-color: green;
+        }
+        p {
+            color: green;
+            background-color: yellow;
+        }
+        h2,h3 {
+            color: violet;
+        }
+    </style>
+</head>
+```
+
 
 
 
