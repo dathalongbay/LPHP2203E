@@ -1,5 +1,5 @@
 # tìm hiểu về git & github
-# tìm hiểu html.
+# tìm hiểu html..
 ```
 vào trong visual code tạo ra 1 file html
 gõ lệnh html:5 sinh ra file html5 mẫu
