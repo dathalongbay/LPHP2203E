@@ -215,7 +215,7 @@ rows là số hàng
 # input type="radio"
 ```
 <input type="radio" name="gioitinh" value="nam" /> Nam
-<input type="radio" name="gioitinh" value="nu" /> Nam
+<input type="radio" name="gioitinh" value="nu" /> Nữ
 ```
 # select
 ```
