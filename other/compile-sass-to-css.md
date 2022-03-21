@@ -18,4 +18,9 @@ cách biên dịch sass thành css
 yêu cầu cài đặt nodejs trước khi bắt đầu  
 npm install -g sass
 </pre>
+```
+cách biên dịch sass thành css  
+yêu cầu cài đặt nodejs trước khi bắt đầu  
+npm install -g sass
+```
 
