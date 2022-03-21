@@ -1,26 +1,12 @@
 # Biên dịch sass thành css
 https://sass-lang.com/install
-
-npm install -g sass
-
-sass source/stylesheets/index.scss build/stylesheets/index.css
-<p>
-  https://sass-lang.com/install <br>
-  npm install -g sass <br>
-  sass source/stylesheets/index.scss build/stylesheets/index.css <br>
-</p>
-https://sass-lang.com/install <br>
-npm install -g sass <br>
-sass source/stylesheets/index.scss build/stylesheets/index.css <br>
-
-<pre>
-cách biên dịch sass thành css  
 yêu cầu cài đặt nodejs trước khi bắt đầu  
+sau đó cài đặt sass global thông qua npm  
 npm install -g sass
-</pre>
+kiểm tra sau khi cài thành công 
+![image](https://user-images.githubusercontent.com/6966136/159206141-2de1d609-8d0e-4b13-8034-712938c34f7a.png)  
+cú pháp biên dịch sass to css
 ```
-cách biên dịch sass thành css  
-yêu cầu cài đặt nodejs trước khi bắt đầu  
-npm install -g sass
+sass source/stylesheets/index.scss build/stylesheets/index.css
 ```
 
