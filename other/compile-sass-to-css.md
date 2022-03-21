@@ -13,3 +13,9 @@ https://sass-lang.com/install <br>
 npm install -g sass <br>
 sass source/stylesheets/index.scss build/stylesheets/index.css <br>
 
+<pre>
+cách biên dịch sass thành css  
+yêu cầu cài đặt nodejs trước khi bắt đầu  
+npm install -g sass
+</pre>
+
