@@ -9,6 +9,6 @@ cú pháp biên dịch sass to css
 ```
 sass source/stylesheets/index.scss build/stylesheets/index.css
 vd :
-sass index.scss indec.css
+sass index.scss index.css
 ```
 
