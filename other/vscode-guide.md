@@ -7,6 +7,18 @@
 ![image](https://user-images.githubusercontent.com/6966136/159397082-daf40492-2ce2-435c-abb7-5254b07f42c7.png)
 # Tìm kiếm trong 1 file tìm kiếm trong nhiều file
 ![image](https://user-images.githubusercontent.com/6966136/159397219-1df659f4-89a8-4630-b267-9a9d55e5ae32.png)
+# Terminal 
+![image](https://user-images.githubusercontent.com/6966136/159397502-473164fa-a998-4532-b5b1-10f6a58310b2.png)
+![image](https://user-images.githubusercontent.com/6966136/159397423-db1d1b2c-7dae-473f-8c0b-2a17f53c0920.png)
+# Open remote window
+![image](https://user-images.githubusercontent.com/6966136/159397664-709cfacc-62b9-48f3-9574-68e2b9152d6e.png)
+# Nhánh git hiện tại 
+![image](https://user-images.githubusercontent.com/6966136/159397704-2e96ead2-6b18-403d-b8ee-4e628c06061b.png)
+# Live run server 
+![image](https://user-images.githubusercontent.com/6966136/159397911-9c91af7c-bfb3-42fd-8bd2-8c8f79abf41b.png)  
+Kết quả   
+![image](https://user-images.githubusercontent.com/6966136/159397958-f395f6de-fa02-4c91-b5b6-7b078b1fc956.png)
+
 # tính năng remote ssh cho phép edit file & folder ssh vào server hay virtual box ...
 ``` REMOTE EDIT VISUAL CODE ``` => Cài thêm 1 extension nào đó 
 # Tính năng command palette 
