@@ -18,6 +18,12 @@
 ![image](https://user-images.githubusercontent.com/6966136/159397911-9c91af7c-bfb3-42fd-8bd2-8c8f79abf41b.png)  
 Kết quả   
 ![image](https://user-images.githubusercontent.com/6966136/159397958-f395f6de-fa02-4c91-b5b6-7b078b1fc956.png)
+# Cửa sổ tìm kiếm 
+![image](https://user-images.githubusercontent.com/6966136/159398096-5c3decd9-4a75-4e69-98e9-abff8eb00f20.png)
+# Cửa sổ git Source version control
+![image](https://user-images.githubusercontent.com/6966136/159398135-b853d0b7-26a3-4b45-962c-54637cef20fb.png)
+# Container 
+![image](https://user-images.githubusercontent.com/6966136/159398206-7919d146-9d7b-4772-95ca-6980b050d1cd.png)
 
 # tính năng remote ssh cho phép edit file & folder ssh vào server hay virtual box ...
 ``` REMOTE EDIT VISUAL CODE ``` => Cài thêm 1 extension nào đó 
