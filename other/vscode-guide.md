@@ -24,8 +24,17 @@ Kết quả
 ![image](https://user-images.githubusercontent.com/6966136/159398135-b853d0b7-26a3-4b45-962c-54637cef20fb.png)
 # Container 
 ![image](https://user-images.githubusercontent.com/6966136/159398206-7919d146-9d7b-4772-95ca-6980b050d1cd.png)
+# docker 
+![image](https://user-images.githubusercontent.com/6966136/159402071-21faad25-2068-40c7-ab08-2279cb09e38d.png)
+# SHIFT + SHIFT search file name
+![image](https://user-images.githubusercontent.com/6966136/159402125-36314807-95ca-48fe-95ef-63980c53ebb7.png)
+# CTRL + CLICK Move to define
+# Extension
+![image](https://user-images.githubusercontent.com/6966136/159402311-3c097022-6c1e-4afe-8d1e-39cda03bfdcc.png)
 
 # tính năng remote ssh cho phép edit file & folder ssh vào server hay virtual box ...
+![image](https://user-images.githubusercontent.com/6966136/159402036-4ba90697-08e9-4472-a73a-3e041bc75940.png)
+
 ``` REMOTE EDIT VISUAL CODE ``` => Cài thêm 1 extension nào đó 
 # Tính năng command palette 
 ![image](https://user-images.githubusercontent.com/6966136/159396143-721d483a-9b01-411e-9ca4-9924cfc0f7ef.png)
