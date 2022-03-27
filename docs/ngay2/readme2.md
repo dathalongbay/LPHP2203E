@@ -132,4 +132,20 @@ website abc.com trỏ đến ip 192.168.1.1 được định danh cho 1 máy ch�
 => ../ có nghĩa là file html phải đi ngược ra bên ngoài 1 cấp thư mục 
 ../../ có nghĩa là phải đi ngược ra ngoài 2 cấp 
 ```
+# html5 semantic ngữ nghĩa có nghĩa là thẻ đại diện cho 1 ý nghĩa nào đó thay cho thẻ div chủ html4
+```
+<article> định nghĩa thẻ này chứa 1 bài viết
+<aside> định nghĩa thẻ này chứa 1 vùng bên cạnh nội dụng của trang web
+<details> thẻ chứa chi tiết mà người dùng có thể xem
+<figcaption> định nghĩa mô tả cho 1 thẻ figure
+<figure> chứa nội dung như biểu đồ, hình ảnh 
+<footer> định nghĩa chân của 1 trang web hay 1 vùng
+<header> đầu trang web hay đầu vùng
+<main> chứa nội dung chính
+<mark> chứa text highlight 
+<nav> chứa các liên kết điều hướng	Defines navigation links
+<section> đinh nghĩa 1 vùng trong trang web	
+<summary>	tóm tắt
+<time> thời gian 
+```
 
