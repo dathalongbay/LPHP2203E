@@ -148,4 +148,21 @@ website abc.com trỏ đến ip 192.168.1.1 được định danh cho 1 máy ch�
 <summary>	tóm tắt
 <time> thời gian 
 ```
+# selector theo tên thẻ
+```
+<style type="text/css">
+    h1 {
+        color: antiquewhite;
+    }
+    h2 {
+        color: beige;
+    }
+</style>
+```
+# selector lồng nhau 
+```
+ .parent .child {
+    background-color: orange;
+}
+```
 
