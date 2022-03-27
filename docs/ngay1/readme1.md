@@ -248,7 +248,14 @@ https://chrome.google.com/webstore/detail/octotree-github-code-tree/bkhaagjahfmj
 ```
 ![image](https://user-images.githubusercontent.com/6966136/159124941-d4b88d2e-8990-4660-aff5-a715d164852c.png)
 
-
+# input type checkbox
+```
+    <input type="checkbox" name="gui" value="1"> Đăng ký nhận thông tin
+```
+# input submit để gửi dữ liệu khi người dùng click vào nút này
+```
+<input type="submit" value="Gửi dữ liệu">
+```
 
 
 
