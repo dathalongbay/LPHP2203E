@@ -102,3 +102,34 @@ nhóm inline gồm các thẻ
 ```
 <a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>
 ```
+# filepath 
+```
+File path ( đường dẫn file ) rất quan trọng 
+A file path describes the location of a file in a web site's folder structure.
+đường dẫn file mô tả vị trí của 1 file trong cấu trúc thư mục của website . 
+file path chia làm 2 loại 
+loại 1 là đường dẫn tuyệt đối ( không thay đổi và cố định )
+loại 2 là đường dẫn tương đối ( phụ thuộc vào cấu trúc thư mục của vị trí file)
+```
+chú ý :
+```
+file path áp dụng khi liên kết đến 1 bên ngoài giống như :
+kết nối với 1 file html khác
+kết nối đến 1 hình ảnh 
+kết nối đến 1 file css khác 
+kết nối đến 1 file javascript khác
+```
+chú ý :
+```
+<img src="picture.jpg">	
+=> Hiểu là file picture.jpg nằm trong cùng 1 thư mục với file html 
+<img src="images/picture.jpg">	
+=> Hiểu là file html nằm cùng cấp thư mục với folder images trong images có hình ảnh picture.jpg
+<img src="/images/picture.jpg">
+=> hiểu thư mục images nằm trực tiếp trong folder gốc của website
+website abc.com trỏ đến ip 192.168.1.1 được định danh cho 1 máy chủ web có đường dẫn cụ thể 
+<img src="../picture.jpg">	
+=> ../ có nghĩa là file html phải đi ngược ra bên ngoài 1 cấp thư mục 
+../../ có nghĩa là phải đi ngược ra ngoài 2 cấp 
+```
+
