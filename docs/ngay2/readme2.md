@@ -191,4 +191,29 @@ website abc.com trỏ đến ip 192.168.1.1 được định danh cho 1 máy ch�
     <div class="classB">.classB</div>
 </body>
 ```
+# chọn thẻ có đồng thời cả 2 class : chú ý phải viết liền
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .classA.classB {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    chọn thẻ có đồng thời cả 2 class : chú ý phải viết liền
+
+    <div class="classA"> Class A</div>
+    <div class="classB"> Class B</div>
+    <div class="classA classB"> Class A Class B</div>
+</body>
+</html>
+```
 
