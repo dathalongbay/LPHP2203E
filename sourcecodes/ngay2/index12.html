@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        h1 {
+            color: antiquewhite;
+        }
+        h2 {
+            color: beige;
+        }
+
+        .parent .child {
+            background-color: orange;
+        }
+
+        .child {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    
+    <pre>
+        - selector theo tên thẻ
+        - selector lồng nhau : selectorA selectorB
+        ví dụ cho class : .parent .child {}
+        ví dụ cho id : #parent #child {}
+        ví dụ cho tên thẻ : div p {}
+        class với id : .parent #abc {}
+        class với id : #section1 .abc {}
+        class với thẻ : .parent h1 {}
+        id với thẻ : #parent h1 {}
+        thẻ với class : header .navbar {}
+    </pre>
+
+    <h1>thẻ h1</h1>
+    <h2>thẻ h2</h2>
+
+    <div class="parent">
+        <div class="child">
+            Thẻ child trong thẻ parent
+        </div>
+        <div class="child">
+            Thẻ child trong thẻ parent
+        </div>
+    </div>
+
+    <div class="child">
+        Thẻ child ngoài thẻ parent
+    </div>
+
+
+</body>
+</html>
