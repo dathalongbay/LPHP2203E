@@ -32,3 +32,14 @@ hiểu đơn giản id như số chứng minh thư số căn cước
     <li>Tp Hồ chí minh</li>
 </ol>
 ```
+# class 
+```
+ thuộc tính class trong class 
+thuộc tính class được dùng để gom nhóm các thẻ html và 1 nhóm 
+thuộc tính id được dùng để định danh 1 thẻ html là duy nhất 
+trong css chọn theo id viết là #id 
+chọn theo class viết là .className 
+
+* chú ý : có thể sử dụng nhiều class trong thẻ html
+vd : class1 class2 class3  
+```
