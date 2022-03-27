@@ -82,3 +82,23 @@ ví dụ cách 3 :
 </body>
 </html>
 ```
+
+# block và inline
+```
+ Block và inline trong html
+thẻ span thường chứa văn bản và hiển thị kiểu inline mặc định 
+thẻ div hiển thị kiểu block 
+block có nghĩa là khối
+inlien có nghĩa là hàng 
+thẻ div là thẻ đại diện cho nhóm block 
+Block có 2 đặc điểm : độ rộng của thẻ block luôn chiếm 100% độ rộng của thẻ mẹ . nên thẻ block luôn xuất hiện trong 1 hàng mới
+Inline có đặc điểm : độ rộng của thẻ inline chỉ chiếm tương ứng với nội dung bên trong của thẻ inline
+```
+nhóm block gồm thẻ nào ?
+```
+<address><article><aside><blockquote><canvas><dd><div><dl><dt><fieldset><figcaption><figure><footer><form><h1>-<h6><header><hr><li><main><nav><noscript><ol><p><pre><section><table><tfoot><ul><video>
+```
+nhóm inline gồm các thẻ 
+```
+<a><abbr><acronym><b><bdo><big><br><button><cite><code><dfn><em><i><img><input><kbd><label><map><object><output><q><samp><script><select><small><span><strong><sub><sup><textarea><time><tt><var>
+```
