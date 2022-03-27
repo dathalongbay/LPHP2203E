@@ -165,4 +165,30 @@ website abc.com trỏ đến ip 192.168.1.1 được định danh cho 1 máy ch�
     background-color: orange;
 }
 ```
+# Nhóm nhiều selector cho 1 đoạn css
+```
+<style type="text/css">
+        h1,h2,section {
+            background-color: red;
+        }
+
+        .classA , .classB {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    Nhóm nhiều selector cho 1 đoạn css
+
+    <section>
+        thẻ section
+    </section>
+
+    <h1>thẻ h1</h1>
+    <h2>thẻ h2</h1>
+
+    <div class="classA">.classA</div>
+    <div class="classB">.classB</div>
+</body>
+```
 
