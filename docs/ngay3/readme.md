@@ -117,3 +117,15 @@ background-position: 10% 20%;
             padding: 10px;
         }
 ```
+# <h1>CSS margin dùng để căn chỉnh cách cách thành phần khác trên trang</h1>
+```
+.target1 {
+            border: 1px solid red;
+
+            margin-left: 100px;
+            margin-top: 50px;
+            margin-right: 200px;
+            margin-bottom: 20px;
+        }
+```
+
