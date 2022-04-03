@@ -47,3 +47,11 @@ background-position: center top;    ở giữa trên cùng
 background-position: center bottom;  ở giữa dưới cùng
 background-position: center center;  ở giữa theo cả chiều ngang và dọc
 ```
+# background-position dùng theo đơn vị px
+```
+background-position: 100px 50px;
+```
+# background-position dùng theo đơn vị %
+```
+background-position: 10% 20%;
+```
