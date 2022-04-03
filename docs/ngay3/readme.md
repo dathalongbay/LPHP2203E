@@ -25,3 +25,5 @@ vd kích cỡ của thẻ div là 50px * 50 px mà ảnh nền có kích cỡ 10
 ```
 background-repeat: no-repeat; không lặp ảnh nền   
 background-repeat: repeat-x; lặp theo chiều ngang   
+background-repeat: repeat-y; lặp theo chiều dọc   
+background-repeat: repeat; lặp theo chiều ngang và dọc ( đây là giá trị mặc định )   
