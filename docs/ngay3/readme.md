@@ -27,3 +27,9 @@ background-repeat: no-repeat; không lặp ảnh nền
 background-repeat: repeat-x; lặp theo chiều ngang   
 background-repeat: repeat-y; lặp theo chiều dọc   
 background-repeat: repeat; lặp theo chiều ngang và dọc ( đây là giá trị mặc định )   
+#  background-attachment:fixed đính kèm ảnh nền 1 cách cố định
+<pre>
+    chú ý giá trị mặc định của background-attachment là scroll
+    chú ý là thuộc tính background-attachment muốn có ảnh hưởng background-repeat: no-repeat;
+</pre>
+# background-attachment:scroll; ảnh nền không cố định
