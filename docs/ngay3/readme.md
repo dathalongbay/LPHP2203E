@@ -33,3 +33,17 @@ background-repeat: repeat; lặp theo chiều ngang và dọc ( đây là giá t
     chú ý là thuộc tính background-attachment muốn có ảnh hưởng background-repeat: no-repeat;
 </pre>
 # background-attachment:scroll; ảnh nền không cố định
+# background-position vị trí của ảnh nền
+```
+ chú ý muốn dùng được background-position thì phải dùng kèm background-repeat: no-repeat;
+background-position:X Y;
+X là chiều ngang 
+Y là chiều dọc
+
+background-position: right top;          bên tay phải trên cùng 
+background-position: right bottom;      bên tay phải dưới cùng
+background-position: left bottom;    bên tay trái dưới cùng
+background-position: center top;    ở giữa trên cùng
+background-position: center bottom;  ở giữa dưới cùng
+background-position: center center;  ở giữa theo cả chiều ngang và dọc
+```
