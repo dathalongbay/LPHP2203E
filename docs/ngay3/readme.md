@@ -83,3 +83,27 @@ background-position: 10% 20%;
             background: orange url("images/abc.jpg") no-repeat center center;
         }
 ```
+
+# <h1>Border đường viền</h1>
+<pre>
+    border-style: solid; là phong cách của đường viền
+    border-width: 3px;
+    border-color: red;
+</pre>
+#  <h1>Viết rút gọn border </h1>
+<pre>thứ tự khi viết rút gọn là giá trị của các thuộc tính theo thứ tự :
+    1. border-width 
+    2. border-style
+    3. border-color
+</pre>
+# trang trí viền cho các cạnh khác nhau
+```
+.target {
+    width: 500px;
+    height: 300px;
+    border-top: 2px solid red;
+    border-left: 4px dashed yellow;
+    border-right: 1px dotted orange;
+    border-bottom: 8px double violet;
+}
+```
