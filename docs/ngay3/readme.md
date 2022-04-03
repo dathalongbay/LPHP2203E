@@ -55,3 +55,31 @@ background-position: 100px 50px;
 ```
 background-position: 10% 20%;
 ```
+# Viết rút gọn
+<pre>
+    Thự tự là giá trị của các thuộc tính này
+1. background-color
+2. background-image
+3. background-repeat
+4. background-attachment
+5. background-position
+</pre>
+
+```
+.target {
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+            background-color: orange;
+            background-image: url("images/abc.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+        .target1 {
+            width: 500px;
+            height: 500px;
+            border: 1px solid red;
+            background: orange url("images/abc.jpg") no-repeat center center;
+        }
+```
