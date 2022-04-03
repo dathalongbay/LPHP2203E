@@ -128,4 +128,32 @@ background-position: 10% 20%;
             margin-bottom: 20px;
         }
 ```
+# <h1>CSS padding là độ rộng vùng đệm</h1>
+<pre>
+    chú ý cho phần margin căn giữa 1 thẻ vào giữa màn hình hay giữa bên trong 1 thẻ khác 
+    phải đặt 1 chiều rộng cụ thể cho thẻ đó 
+    phải đặt margin left là auto và margin right là auto
+</pre>
+<pre>
+    padding-top 
+    padding-left 
+    padding-right 
+    padding-bottom
+
+    padding là độ rộng phần đệm nằm giữa border và content
+</pre>
+```
+.target {
+            border: 1px solid orange;
+            width: 300px;
+            border-radius: 24px;
+            margin-left: auto;
+            margin-right: auto;
+
+            padding-top: 10px;
+            padding-left: 50px;
+            padding-right: 20px;
+            padding-bottom: 70px;
+        }
+```
 
