@@ -107,3 +107,4 @@ background-position: 10% 20%;
     border-bottom: 8px double violet;
 }
 ```
+# quan sát border style trực quan tại https://www.w3schools.com/css/css_border.asp
