@@ -107,4 +107,13 @@ background-position: 10% 20%;
     border-bottom: 8px double violet;
 }
 ```
-# quan sát border style trực quan tại https://www.w3schools.com/css/css_border.asp
+# quan sát border style trực quan tại https://www.w3schools.com/css/css_border.asp 
+# <h1>Bo tròn viền border-radius</h1>
+```
+ .target1 {
+            width: 300px;
+            border: 3px solid red;
+            border-radius: 30px;
+            padding: 10px;
+        }
+```
