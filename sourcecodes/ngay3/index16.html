@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+    
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            border: 1px solid rebeccapurple;
+        }
+
+        .target {
+            padding: 50px;
+            border: 2px solid red;
+            width: 400px;
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <pre>
+        mặc định độ rộng của 1 thẻ sẽ là content + border trái + border phải + padding trái + padding phải 
+        độ rộng thực tế và độ cao thực tế sẽ bị ảnh hưởng sau khi thêm padding và border vào 
+        khi chúng ta muốn width và height không bị ảnh hưởng trong quá trình thêm padding và border vào thi 
+        chúng ta sử dụng box-sizing: border-box; 
+    </pre>
+
+    <div class="target">
+         <div class="child">
+             Content
+         </div>
+    </div>
+</body>
+</html>
