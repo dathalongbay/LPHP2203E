@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .target1 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .target2 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        .target3 {
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .target4 {
+            width: 100px;
+            height: 100px;
+            background-color: olive;
+            position: absolute;
+            top: 0;
+            left: 30px;
+        }
+
+        .target5 {
+            width: 100px;
+            height: 100px;
+            background-color: olivedrab;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Thuộc tính position ( vị trí )</h1>
+
+    <pre>
+        Thuộc tính position sẽ có 5 giá trị 
+        1 - static ( tĩnh và là giá trị mặc định ) phụ thuộc 
+        vào display là inline hay block và phụ thuộc 
+        vào box model margin padding ... 
+        2 - relative ( tương đối )
+        3 - absolute ( tuyệt đội )
+        4 - fixed ( cố định )
+        5 - sticky ( trạng thái lai giữa relative và fixed )
+
+        Thuộc tính position thì thường đi kèm với thuộc tính sau 
+        top 
+        left 
+        right 
+        bottom 
+        hiểu đơn giản 4 thuộc tính trên dùng để đặt vị trí tọa độ 
+    </pre>
+
+    <div class="target1">
+        Box 1
+    </div>
+
+    <div class="target2">
+        Box 2
+    </div>
+
+    <div class="target3">
+        Box 3
+    </div>
+
+    <div class="target4">
+        Box 4
+    </div>
+
+    <div class="target5">
+        Box 5
+    </div>
+</body>
+</html>
