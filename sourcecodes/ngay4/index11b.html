@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .parent {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            position: relative;
+        }
+        .child {
+            width: 100px;
+            height: 100px;
+            background-color: olive;
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        Absolute có 2 trường hợp chú ý : 
+        1 - thẻ absolute nằm trong thẻ body hoặc các thẻ cha của thẻ asbolute đều có position là static 
+        2 - thẻ absolute nằm trong 1 thẻ có position là relative thì nó sẽ lấy thẻ cha làm gốc tọa độ
+    </pre>
+
+
+    <div class="parent">
+        <div class="child">Thẻ con</div>
+    </div>
+</body>
+</html>
