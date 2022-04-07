@@ -70,3 +70,89 @@ css
     font-family: 'Roboto', sans-serif;
 }
 ```
+# webfont self host
+```
+/* khai báo tên và đường dẫn của web font */
+@font-face {
+    /* dòng khai báo tên */
+    /* CTRL + SHIFT + / */
+    font-family: Roboto;
+    /* dòng khai báo nguồn file font */
+    src: url("Roboto/Roboto-Regular.ttf");
+}
+
+.p1,.p2,.p3 {
+    font-size: 32px;
+}
+
+.p1 {
+    font-family: 'Roboto', sans-serif;
+}
+.p2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.p3 {
+    font-family: 'Roboto', sans-serif;
+}
+```
+<h1>Webfont dạng trực tiếp : https://www.w3schools.com/css/css3_fonts.asp</h1>
+
+# icon font 
+```
+<script src="a076d05399.js"></script>
+
+<style>
+    i {
+        font-size:24px;
+    }
+</style>
+
+<h1>Font Icon</h1>
+
+<i class="fa-brands fa-youtube"></i>
+
+<i class="fas fa-cloud"></i>
+<i class="fas fa-heart"></i>
+<i class="fas fa-car"></i>
+```
+# 4 trạng thái thẻ a 
+```
+ <pre>
+    4 trạng thái thẻ a 
+    1 - a:link trạng thái bình thường ban đầu 
+    2 - a:visited trạng thái đã được click vào rồi
+    3 - a:hover di chuột vào 
+    4 - a:active ( đang click vào rất ngắn )
+</pre>
+<nav>
+    <ul>
+        <li><a href="home.html">Trang chủ</a></li>
+        <li><a href="product.html">Sản phẩm</a></li>
+        <li><a href="service.html">Dịch vụ</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+    </ul>
+</nav>
+```
+css
+```
+nav a {
+    text-decoration: none;
+}
+
+nav a:link {
+    color: violet;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+nav a:visited {
+    color: black;
+}
+
+nav a:active {
+    color:red;
+}
+```
