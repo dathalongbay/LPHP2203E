@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            border: 5px solid red;
+        }
+
+        .container .sidebar1 {
+            background-color: orange;
+            width: 20%;
+            height: 300px;
+            float: right;
+        }
+
+        .container .sidebar2 {
+            background-color: green;
+            width: 20%;
+            height: 300px;
+            float: left;
+        }
+
+        .container .main-content {
+            background-color: violet;
+            width: 60%;
+            height: 300px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Layout 3 cột sử dụng float</h1>
+
+
+    <div class="container">
+        <div class="sidebar1">
+            Sidebar 1
+        </div>
+
+        <div class="main-content">
+            Nội dung chính
+        </div>
+
+        <div class="sidebar2">
+            sidebar2
+        </div>
+    </div>
+</body>
+</html>
