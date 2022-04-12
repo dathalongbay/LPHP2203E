@@ -21,6 +21,7 @@
             position: absolute;
             top: 50px;
             left: 50px;
+            z-index: 3;
         }
 
         .target2 {
@@ -30,6 +31,8 @@
             position: absolute;
             top: 100px;
             left: 150px;
+            z-index: 2;
+
         }
 
         .target3 {
@@ -39,6 +42,7 @@
             position: absolute;
             top: 150px;
             left: 250px;
+            z-index: 5;
         }
 
 
@@ -49,6 +53,12 @@
     <div class="target1">1</div>
     <div class="target2">2</div>
     <div class="target3">3</div>
+
+    <!-- 
+
+        z-index nào có số cao hơn thì sẽ nằm ở bên trên
+        z-index chỉ có tác dụng khi position của thẻ không phải static mặc định
+     -->
     
 </body>
 </html>
