@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <style>
+       * {
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+
+       .target1 {
+           background-color: orange;
+           width: 200px;
+           margin-bottom: 30px;
+           height: 100px;
+           float: left;
+       }
+
+       .target2 {
+           background-color: green;
+           width: 200px;
+           margin-bottom: 30px;
+           height: 100px;
+           overflow: auto;
+           float: right;
+           clear: left;
+       }
+   </style>
+</head>
+<body>
+    <h1>Overflow thuộc tính tràn overflow: auto;</h1>
+
+    <pre>
+        auto là tự động 
+        tự động hiện cuộn chuột khi nội dung tràn ra ngoài 
+        và không hiện cuộn chuột khi nội dung ko tràn 
+        còn với scroll thì sẽ luôn hiện cuộn chuột bất kể nội dung có tràn không 
+    </pre>
+
+    <div class="target1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio est perferendis architecto nisi aliquid laborum, nulla ipsa exercitationem! Ipsa adipisci eos corrupti reprehenderit, maiores harum repellat architecto placeat? Quod?
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio est perferendis architecto nisi aliquid laborum, nulla ipsa exercitationem! Ipsa adipisci eos corrupti reprehenderit, maiores harum repellat architecto placeat? Quod?
+    </div>
+
+    <div class="target2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio est perferendis architecto nisi aliquid laborum, nulla ipsa exercitationem! Ipsa adipisci eos corrupti reprehenderit, maiores harum repellat architecto placeat? Quod?
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta distinctio est perferendis architecto nisi aliquid laborum, nulla ipsa exercitationem! Ipsa adipisci eos corrupti reprehenderit, maiores harum repellat architecto placeat? Quod?
+    </div>
+</body>
+</html>
