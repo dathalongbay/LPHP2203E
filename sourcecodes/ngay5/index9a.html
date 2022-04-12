@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            border: 5px solid red;
+        }
+
+        .container .sidebar1 {
+            background-color: orange;
+            width: 20%;
+            height: 300px;
+            float: right;
+        }
+
+        .container .sidebar2 {
+            background-color: green;
+            width: 20%;
+            height: 300px;
+            
+        }
+
+        .container .main-content {
+            background-color: violet;
+            width: 60%;
+            height: 300px;
+
+
+            clear: right;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Thuộc tính clear</h1>
+    <pre>
+        thuộc tính clear làm gì ?
+        khi có 2 thẻ A và B nằm cạnh nhau 
+        mà thẻ A bị float sang trái thì kéo thẻ B di chuyển lên bên trên nếu còn diện tích 
+        nếu thẻ A bị float sang phải thì kéo thẻ B di chuyển lên trên nếu còn diện tích 
+        mặc dù thẻ B không thay đổi css gì cả 
+
+        => suy ra nếu không muốn thẻ B bị dịch chuyển lên trên bởi thẻ A khi thẻ A float thì làm thế nào ?
+        nếu A float:left thì đặt B clear:left 
+        nếu A float:right thì đặt B clear: right 
+        Nếu không biết A float sang trái hay sang phải thì đặt cho B 
+        clear:both;
+    </pre>
+
+
+    <div class="container">
+        <div class="sidebar1">
+            Sidebar 1
+        </div>
+
+        <div class="main-content">
+            Nội dung chính
+        </div>
+
+        <div class="sidebar2">
+            sidebar2
+        </div>
+    </div>
+</body>
+</html>
