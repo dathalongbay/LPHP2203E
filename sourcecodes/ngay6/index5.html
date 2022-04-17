@@ -5,13 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+        }
+
+        .container ul {
+            list-style: none;
+        }
+
+        ul.menu > li {
+            float: left;
+        }
+        ul.menu > li > a {
+            background-color: green;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <h1>Menu đa cấp</h1>
 
     <div class="container">
         <nav>
-            <ul>
+            <ul class="menu">
                 <li>
                     <a href="">Tablet</a>
                 </li>
