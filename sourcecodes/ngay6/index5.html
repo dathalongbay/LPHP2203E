@@ -32,6 +32,11 @@
             clear: both;
         }
 
+        /* cấp 1 */
+
+        ul.menu > li {
+            position: relative;
+        }
         ul.menu > li > a {
             background-color: green;
             color: white;
@@ -41,10 +46,14 @@
         }
 
         /* css level cấp 2 */
-
+        ul.menu > li > ul {
+            position: absolute;
+            left: 0;
+            top: 100%;
+        }
         ul.menu > li > ul > li {
             position: relative;
-            width: 200px;
+            
         }
         ul.menu > li > ul > li > a {
             color: #fff;
@@ -52,6 +61,7 @@
             display: block;
             padding: 10px;
             text-decoration: none;
+            width: 200px;
         }
 
         /* cấp 3 */
