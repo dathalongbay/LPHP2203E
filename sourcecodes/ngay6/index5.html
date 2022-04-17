@@ -41,14 +41,34 @@
         }
 
         /* css level cấp 2 */
+
+        ul.menu > li > ul > li {
+            position: relative;
+            width: 200px;
+        }
         ul.menu > li > ul > li > a {
             color: #fff;
             background-color: orange;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        /* cấp 3 */
+
+        ul.menu > li > ul > li ul {
+            position: absolute;
+            top: 0;
+            left: 200px;
         }
 
         ul.menu > li > ul > li ul a {
             color: #fff;
             background-color: violet;
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            width: 200px;
         }
 
         /* ẩn hết cấp 2 và cấp 3 */
@@ -57,9 +77,14 @@
         }
 
         /* di chuột vào thẻ li level1 thì hiển thị ra các thẻ ul bên trong */
-        ul.menu > li:hover ul {
+        ul.menu > li:hover > ul {
             display: block;
         } 
+
+        /* di chuột vào cấp 2 thì hiển thị ra ul cấp 3 bên trong  */
+        ul.menu > li > ul > li:hover ul {
+            display: block;
+        }
     </style>
 </head>
 <body>
