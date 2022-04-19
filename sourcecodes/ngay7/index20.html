@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            background-color: orange;
+            width: 700px;
+            padding: 20px;
+        }
+
+        
+
+        .container > div {
+            padding: 20px;
+        }
+
+        .container .sidebar1 {
+            width: 30%;
+            height: 100px;
+            background-color: aqua;
+        }
+
+        .container .sidebar2 {
+            width: 25%;
+            height: 100px;
+            background-color: beige;
+        }
+
+        .container .main-content {
+            background-color: gainsboro;
+            width: 45%;
+        }
+
+        .container1 {
+            display: flex;
+            flex-direction: column;
+            background-color: orange;
+            width: 700px;
+            padding: 20px 0;
+        }
+
+        .container1 > div {
+            background-color: aquamarine;
+            width: 100%;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <pre>
+        flexbox
+        dựng layout float và position 
+        flexbox container ( khung chứa )
+        flexbox element/item ( thành phần trong flex container)
+
+        xác định cho thẻ mẹ có display:flex;
+
+        flex-direction
+    </pre>
+
+    <h1>Row </h1>
+    <div class="container">
+
+        <div class="sidebar1">Sidebar 1</div>
+        <div class="main-content">Main content</div>
+        <div class="sidebar2">sidebar2</div>
+
+    </div>
+
+    <h1>Column</h1>
+
+    <div class="container1">
+
+        <div class="sidebar1">Sidebar 1</div>
+        <div class="main-content">Main content</div>
+        <div class="sidebar2">sidebar2</div>
+
+    </div>
+
+
+</body>
+</html>
