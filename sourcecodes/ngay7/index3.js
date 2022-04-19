@@ -1,0 +1,1 @@
+alert("chào js từ file index3.js");
