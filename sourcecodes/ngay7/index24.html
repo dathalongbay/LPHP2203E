@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+#flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>The justify-content Property</h1>
+
+<p>The "justify-content: center;" aligns the flex items at the center of the container:</p>
+
+<div id="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+</div>
+
+<button id="btn1">justify-content: center;</button>
+<button id="btn2">justify-content: flex-start;</button>
+<button id="btn3">justify-content: flex-end;</button>
+<button id="btn4">justify-content: space-around;</button>
+<button id="btn5">justify-content: space-between;</button>
+
+<script>
+    document.getElementById('btn1').onclick = function() {
+        document.getElementById('flex-container').style.justifyContent = 'center';
+    };
+    document.getElementById('btn2').onclick = function() {
+        document.getElementById('flex-container').style.justifyContent = 'flex-start';
+    };
+    document.getElementById('btn3').onclick = function() {
+        document.getElementById('flex-container').style.justifyContent = 'flex-end';
+    };
+    document.getElementById('btn4').onclick = function() {
+        document.getElementById('flex-container').style.justifyContent = 'space-around';
+    };
+    document.getElementById('btn5').onclick = function() {
+        document.getElementById('flex-container').style.justifyContent = 'space-between';
+    };
+
+</script>
+
+</body>
+</html>
+
+
