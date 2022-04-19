@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var p = [2,4,6,8];
+        console.log(p);
+
+        // chú ý là typeof không kiểm tra được kiểu dữ liệu dạng mảng
+        // vì nó trả ra chuỗi object 
+        // muốn xác định biến có kiểu dữ liệu mảng thì làm thế nào ?
+        console.log(typeof p);
+
+        // cách 1
+        console.log("cách 1");
+        console.log(Array.isArray(p));
+        // cách 2
+        console.log("cách 2");
+        console.log(p instanceof Array);
+
+    </script>
+</body>
+</html>
