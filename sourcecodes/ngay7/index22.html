@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+#flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+</style>
+</head>
+<body>
+
+<h1>The flex-wrap Property</h1>
+
+<p>The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary:</p>
+<p>flex-wrap xác định cách mà các flex item con có được bao hay không</p>
+
+<pre style="color:red">
+    thẻ mẹ thì phải đặt display là flex
+    flex-direction : hướng của flex items ( con )
+    flex-wrap : bao flex items ( con ) hay không 
+</pre>
+
+<div id="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>  
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>  
+  <div>10</div>
+  <div>11</div>
+  <div>12</div>  
+</div>
+
+<p>Try resizing the browser window.</p>
+
+
+<button id="btn1">flex-wrap: wrap;</button>
+<button id="btn2">flex-wrap: nowrap;</button>
+<button id="btn3">flex-wrap: wrap-reverse;</button>
+
+<script>
+    document.getElementById('btn1').onclick = function() {
+        document.getElementById('flex-container').style.flexWrap = 'wrap';
+    };
+    document.getElementById('btn2').onclick = function() {
+        document.getElementById('flex-container').style.flexWrap = 'nowrap';
+    };
+    document.getElementById('btn3').onclick = function() {
+        document.getElementById('flex-container').style.flexWrap = 'wrap-reverse';
+    };
+
+</script>
+</body>
+</html>
+
+
