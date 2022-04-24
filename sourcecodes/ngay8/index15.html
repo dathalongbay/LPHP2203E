@@ -14,6 +14,27 @@
         // in phần tử lớn nhất trong mảng 
         // in phần tử nhỏ nhất trong mảng 
 
+        var max;
+        var min;
+        for(var i = 0;i < n.length; i++) {
+            if (typeof max == 'undefined') {
+                max = n[i];
+            }
+            if (n[i] > max) {
+                max = n[i];
+            }
+
+            if (typeof min == 'undefined') {
+                min = n[i];
+            }
+            if (n[i] < min) {
+                min = n[i];
+            } 
+        }
+
+        document.write("max là :" + max);
+        document.write("min là :" + min);
+
     </script>
 </body>
 </html>
