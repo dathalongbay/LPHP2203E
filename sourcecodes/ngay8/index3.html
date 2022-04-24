@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .flex-container {
+          display: flex;
+          align-items: stretch;
+          background-color: #f1f1f1;
+        }
+        
+        .flex-container>div {
+          background-color: DodgerBlue;
+          color: white;
+          width: 100px;
+          margin: 10px;
+          text-align: center;
+          line-height: 75px;
+          font-size: 30px;
+        }
+
+        #fi1 {
+            order: 4;
+        }
+        #fi2 {
+            order: 1;
+        }
+        #fi3 {
+            order: 2;
+        }
+        #fi4 {
+            order: 3;
+        }
+        </style>
+</head>
+<body>
+    <pre>
+        các thuộc tính áp dụng flex item trong flex container 
+        1 - order thứ tự sắp xếp 
+    </pre>
+
+    <div class="flex-container">
+        <div id="fi1">1</div>
+        <div id="fi2">2</div>
+        <div id="fi3">3</div> 
+        <div id="fi4">4</div>
+      </div
+</body>
+</html>
