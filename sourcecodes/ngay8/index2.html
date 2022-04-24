@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #flex-container {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          height: 300px;
+          background-color: DodgerBlue;
+        }
+        
+        #flex-container > div {
+          background-color: #f1f1f1;
+          width: 100px;
+          margin: 10px;
+          text-align: center;
+          line-height: 75px;
+          font-size: 30px;
+        }
+        </style>
+</head>
+<body>
+    <h1>align-content</h1>
+
+    <div id="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>  
+        <div>4</div>  
+        <div>5</div>  
+        <div>6</div>  
+        <div>7</div>  
+        <div>8</div>  
+        <div>9</div>  
+        <div>10</div>  
+      </div>
+
+      <button id="btn1">flex-start</button>
+      <button id="btn2">flex-end</button>
+      <button id="btn3">center</button>
+      <button id="btn4">space-between</button>
+      <button id="btn5">space-around</button>
+      <button id="btn6">stretch</button>
+
+      <script>
+          document.getElementById('btn1').onclick = function() {
+        document.getElementById('flex-container').style.alignContent = 'flex-start';
+    };
+    document.getElementById('btn2').onclick = function() {
+        document.getElementById('flex-container').style.alignContent = 'flex-end';
+    };
+    document.getElementById('btn3').onclick = function() {
+        document.getElementById('flex-container').style.alignContent = 'center';
+    };
+    document.getElementById('btn4').onclick = function() {
+        document.getElementById('flex-container').style.alignContent = 'space-between';
+    };
+    document.getElementById('btn5').onclick = function() {
+        document.getElementById('flex-container').style.alignContent = 'space-around';
+    };
+    document.getElementById('btn6').onclick = function() {
+        document.getElementById('flex-container').style.alignContent = 'stretch';
+    };
+      </script>
+</body>
+</html>
