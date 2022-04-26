@@ -12,18 +12,19 @@
     <form action="" name="info">
         <p>
             họ tên ( bắt buộc nhập):
-            <input type="text" name="hoten">
+            <input type="text" name="hoten" id="hoten">
             <span id="validate-hoten" style="color: red;"></span>
         </p>
 
         <p>
             ghi chú ( từ 10 đến 100 ky tu ) :
             nếu người dùng nhập > 100 ký tự thì cắt ngắn đi đảm bảo textarea ko được vượt quá 100 ký tự
-            <textarea name="ghichu"></textarea>
-            <span id="validate-hoten" style="color: red;"></span>
+            <textarea name="ghichu" id="ghichu"></textarea>
+            <span id="validate-ghichu" style="color: red;"></span>
+            Nếu gõ > 100 ký tự hoặc paste vào > 100 thì ko nhập được nữa và cắt bớt chuỗi đi đảm bảo nhỏ 100 ký tự onchange 
         </p>
 
-        <p id="kiemtra" style="background-color: green;width: 100px;">Kiem tra</p>
+        <p id="kiemtra" onclick="kiemTra()" style="background-color: green;width: 100px;">Kiem tra</p>
     </form>
 
     <pre>
@@ -31,5 +32,33 @@
         - kết hợp với hàm xử lý chuỗi : https://www.w3schools.com/js/js_string_methods.asp
     </pre>
 
+
+    <script>
+        function kiemTra() {
+            var hoten = document.getElementById("hoten").value;
+            var ghichu = document.getElementById("ghichu").value;
+            var kt = true;
+            if (hoten.length <= 0) {
+                document.getElementById("validate-hoten").innerHTML = "Họ tên đang rỗng";
+                kt = false;
+            } else {
+                document.getElementById("validate-hoten").innerHTML = "";
+            }
+
+            if (ghichu.length < 10 || ghichu.length > 100) {
+                document.getElementById("validate-ghichu").innerHTML = "Ghi chú không hợp lệ";
+                kt = false;
+            } else {
+                document.getElementById("validate-ghichu").innerHTML = "";
+            }
+
+
+            if (kt == true) {
+                alert('thông tin hợp lệ');
+            }
+
+
+        }
+    </script>    
 </body>
 </html>
