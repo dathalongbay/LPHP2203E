@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        function hàm trong js 
+        hàm để thực hiện chức năng ( module hóa ) có thể tái sử dụng 
+        function ten_ham(tham_so1 = "gia trị mac dinh ", tham_so2 = "gia trị mac dinh ", ...){
+
+             // nội dung hàm 
+             // nếu cần trả về 1 giá trị
+             // return ketqua;   
+        }
+
+        // gọi ham 
+        ten_ham(doi_so1, doi_so_2 , ... );
+    </pre>
+
+    <form action="" name="diemtb" method="post">
+        <div>
+            toan 
+            <input type="text" id="toan" name="toan" value="">
+        </div>
+        <div>
+            van 
+            <input type="text" id="van" name="van" value="">
+        </div>
+        <div>
+            anh 
+            <input type="text" id="anh" name="anh" value="">
+        </div>
+
+        <p id="tinh" style="width: 100px; background: green">In ra kết quả</p>
+    </form>
+
+    <div id="ketqua">
+
+    </div>
+
+    <script>
+        function diem_trung_binh_xep_loai(toan = 1, van = 1, anh = 1) {
+            let noidung = '';
+            var diemTb = ((toan * 2) + (van * 2) + (anh * 1))/5 ;
+            var xl = "";
+            if (diemTb > 8) {
+                xl = "giỏi";
+            } else if (diemTb > 6.5) {
+                xl = "khá";
+            } else if (diemTb > 5) {
+                xl = "tb";
+            } else {
+                xl = "học lại";
+            }
+
+            noidung = "<p>diem tb : "+diemTb+ "</p>";
+            noidung += "<p>xếp loại : "+xl+"</p>"; 
+
+            // output
+            return noidung;
+        }
+
+        document.getElementById("tinh").onclick = function() {
+            var t = document.getElementById("toan").value;
+            var v = document.getElementById("van").value;
+            var a = document.getElementById("anh").value;
+            var kq = diem_trung_binh_xep_loai(t,v,a);
+            document.getElementById("ketqua").innerHTML = kq;
+        }
+
+        
+    </script>
+</body>
+</html>
