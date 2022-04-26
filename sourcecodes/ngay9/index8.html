@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <form action="" name="info">
+        <p>
+            họ tên ( bắt buộc nhập):
+            <input type="text" name="hoten">
+            <span id="validate-hoten" style="color: red;"></span>
+        </p>
+
+        <p>
+            ghi chú ( từ 10 đến 100 ky tu ) :
+            nếu người dùng nhập > 100 ký tự thì cắt ngắn đi đảm bảo textarea ko được vượt quá 100 ký tự
+            <textarea name="ghichu"></textarea>
+            <span id="validate-hoten" style="color: red;"></span>
+        </p>
+
+        <p id="kiemtra" style="background-color: green;width: 100px;">Kiem tra</p>
+    </form>
+
+    <pre>
+        dùng sự kiện gì ? 
+        - kết hợp với hàm xử lý chuỗi : https://www.w3schools.com/js/js_string_methods.asp
+    </pre>
+
+</body>
+</html>
