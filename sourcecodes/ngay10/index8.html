@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        hàm mũi tên : arrow function 
+    </pre>
+
+    <div id="demo1"></div>
+    <div id="demo2"></div>
+
+    <script>
+        // hàm bình thường 
+        // gán hàm vô danh cho 1 biến tên là hello
+        hello = function() {
+            return "Hello World!";
+        }
+        // gọi đc hàm vô danh đó chạy gọi = cách hello();
+        document.getElementById("demo1").innerHTML = hello();
+
+        // hàm mũi tên arrow function 
+        // function chuyển thành ---> () => 
+        helloArrowFunc = () => {
+            return "Hello World!";
+        }
+        document.getElementById("demo2").innerHTML = helloArrowFunc();
+
+    </script>
+</body>
+</html>
