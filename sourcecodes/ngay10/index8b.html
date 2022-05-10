@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        helloArrowFunc = (val) => {
+            return "Hello World! " + val;
+        }
+
+        với arrow function mà bên trong không có mã nào khác ngoài dòng return trả về 
+        thì có thể viết rút gọi là 
+        helloArrowFunc = val => "Hello World! " + val;
+        
+
+        chú ý thứ 2 : 
+        từ khóa this trong regular function và từ khóa this trong arrow function 
+        1 - regular function vs this 
+        With a regular function this represents the object that calls the function:
+        Với 1 hàm thuông thường thì từ khóa this nó đại diện cho đối được mà gọi cái function đó 
+        https://www.w3schools.com/js/tryit.asp?filename=tryjs_arrow_function6
+        2 - arrow function vs this
+        With an arrow function this represents the owner of the function:
+        với 1 arrow function thì từ khóa this đại diện cho chủ sở hữu của function và thông thường thì sẽ là window 
+        https://www.w3schools.com/js/tryit.asp?filename=tryjs_arrow_function7
+    </pre>
+
+    <script>
+        helloArrowFunc = (val) => {
+            console.log("this :");
+            console.log(this);
+            return "Hello World! " + val;
+        }
+
+        abc = () => "ABC";
+
+        console.log("in ra đối tương window");
+        console.log(window);
+    </script>
+</body>
+</html>
