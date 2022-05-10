@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        JavaScript Hoisting
+        Hoisting is JavaScript's default behavior of moving declarations to the top.
+        Hoisting là hành vi mặc định đưa đoạn mã khai báo biến lên trên cùng.
+        Hoisting chỉ áp dụng cho từ khóa var 
+        let và const không áp dụng với Hoisting
+    </pre>
+
+    <div id="demo"></div>
+
+    <script>
+        //
+        x = 5; // Assign 5 to x
+
+        elem = document.getElementById("demo"); // Find an element
+        elem.innerHTML = x;                     // Display x in the element
+
+        var x; // Declare x
+    </script>
+</body>
+</html>
