@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        Ngày tháng năm sinh :
+        <input type="text" name="ngaysinh" id="ngaysinh" value="" placeholder="Y-m-d vd 2015-1-21">
+
+        <button id="tinh">Tính số tuổi</button>
+    </div>
+
+    <script>
+        document.getElementById("tinh").onclick = function() {
+            var ngaysinh = document.getElementById("ngaysinh").value;
+            // chuyển 1 chuỗi người dùng nhập thành dạng thời gian trong js
+            var t2 = new Date(ngaysinh);
+            // quy đổi ra timestamp tính từ 1.1.1970
+            t2 = t2.getTime();
+            // thời gian hiện tại string
+            var t = new Date();
+            // số 1.1.1970
+            var t1 = t.getTime();
+            console.log(t2);
+            console.log(t1);
+            // số ms
+            var t3 = t1 - t2;
+            // quy đổi về năm
+            var t4 = 24*60*60*1000;
+            var t5 = t3/t4;
+            
+            document.write("tuổi của bạn là : " + (t5/365) );
+
+            // tuổi của bạn là 11 năm 9 tháng 24 ngày 
+
+
+        };
+    </script>
+
+</body>
+</html>
