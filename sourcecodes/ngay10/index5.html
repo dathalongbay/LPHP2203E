@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        có 3 scope ( phạm vi của biến )
+        1 - là block scope là {}
+        2 - là local scope ( phạm vi cục bộ) trong function 
+        3 - global scope ( biến toàn cục )
+    </pre>
+
+    <script>
+        {
+            var x = 1;
+            let y = 2;
+            const z = 3;
+            console.log("trong block scope");
+            console.log(x);
+            console.log(y);
+            console.log(z);
+        }
+
+       try {
+        console.log("ngoài block scope");
+            console.log(x);
+            console.log(y);
+            console.log(z);
+       } catch(err) {
+            console.log(err);
+       }
+       
+    </script>
+</body>
+</html>
