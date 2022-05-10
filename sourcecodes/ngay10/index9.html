@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        tạo ra 1 class hay gọi là 1 lớp trong js 
+        class TenClass {
+            // phương thức khởi tạo 
+            constructor(name, year) {
+                // 2 thuộc tính của class
+                this.name = name;
+                this.year = year;
+            }
+            method_1() { ... }
+            method_2() { ... }
+            method_3() { ... }
+        }
+
+        // cú pháp để khởi tạo object từ class 
+        var obj1 = new TenClass("ten", "nam");
+        // gọi đến method 
+        obj1.method_1();
+    </pre>
+
+    <script>
+        class Student {
+
+            constructor(name, age, address, point) {
+                // gán vào các thuộc tính của class
+                // this đại diện cho chính class đó 
+                this.name = name;
+                this.age = age;
+                this.address = address;
+                this.point = point;
+            }
+
+            showInfo() {
+                return "tên : " + this.name + "<br>" + " tuổi " + this.age + "<br>" + " ..."; 
+            }
+    
+        }
+
+        var hoanganh = new Student("hoang anh", 21, "hà nội", 9);
+        var chi = new Student("chi", 20, "bắc ninh", 8);
+        console.log(hoanganh.showInfo());
+        console.log(chi.showInfo());
+    </script>
+</body>
+</html>
