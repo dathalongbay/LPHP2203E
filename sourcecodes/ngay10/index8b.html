@@ -29,6 +29,9 @@
         https://www.w3schools.com/js/tryit.asp?filename=tryjs_arrow_function7
     </pre>
 
+    <button id="callFunc1">callFunc</button>
+    <h1 id="callFunc2">callFunc</h1>
+
     <script>
         helloArrowFunc = (val) => {
             console.log("this :");
@@ -40,6 +43,17 @@
 
         console.log("in ra đối tương window");
         console.log(window);
+
+        // hàm thông thường 
+        helloRegularFunc = function(val) {
+            console.log("this trong regular function :");
+            console.log(this);
+            return "Hello World! " + val;
+        }
+
+        document.getElementById("callFunc1").addEventListener("click", helloRegularFunc);
+
+
     </script>
 </body>
 </html>
