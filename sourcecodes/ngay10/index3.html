@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div>
+        Ngày tháng năm sinh :
+        <input type="text" name="ngaysinh" id="ngaysinh" value="" placeholder="Y-m-d vd 2015-1-21">
+
+        <button id="tinh">In ra các method của thời gian</button>
+    </div>
+
+    <script>
+        document.getElementById("tinh").onclick = function() {
+            var t = document.getElementById("ngaysinh").value;
+            // ISO Y-m-d
+            t = new Date(t);
+            // in ra năm 
+            console.log(t.getFullYear());
+            console.log(t.getMonth());
+            console.log(t.getDate());
+
+
+            var t2 = new Date();
+            t2.setFullYear(1995);
+            t2.setMonth(0);
+            t2.setDate(1);
+            console.log(t2);
+
+           
+
+
+        };
+    </script>
+
+</body>
+</html>
