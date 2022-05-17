@@ -5,22 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        #demo1 {
+            border: 2px solid orange;
+            padding: 20px;
+        }
+
+        #demo2 {
+            background-color: green;;
+        }
+
+        #hl {
+            background-color: red;
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <pre>
-        .innerText == .text()
-        .innerHTML == .html()
-        .value == .val()
+        thêm văn bản hoặc thêm thẻ html
+        append() - Inserts content at the end of the selected elements
+        prepend() - Inserts content at the beginning of the selected elements
+        after() - Inserts content after the selected elements
+        before() - Inserts content before the selected elements
     </pre>
 
-    <h1>get and set jquery</h1>
-
-    <div id="demo1">Văn bản mẫu số 1</div>
-    <div id="demo2">
-        <p>thẻ p trong demo2</p>
+    <div id="demo1">
+        <p id="demo2">văn bản mặc định</p>
     </div>
 
-    <input type="text" name="demo3" id="demo3">
-    
+    <button id="append">append</button>
+    <button id="prepend">prepend</button>
+    <button id="after">after</button>
+    <button id="before">before</button>
+
+    <script>
+        $(document).ready(function() {
+            $("#append").on("click", function() {
+                $("#demo1").append("<p id='hl'>thẻ p</p>");
+            });
+
+            $("#prepend").on("click", function() {
+                $("#demo1").prepend("<p id='hl'>thẻ p</p>");
+            });
+
+            $("#after").on("click", function() {
+                $("#demo1").after("<p id='hl'>thẻ p</p>");
+            });
+
+            $("#before").on("click", function() {
+                $("#demo1").before("<p id='hl'>thẻ p</p>");
+            });
+        });
+    </script>
+
+
 </body>
 </html>
