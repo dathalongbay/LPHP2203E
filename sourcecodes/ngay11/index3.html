@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        https://www.javascripttutorial.net/snippets/
+        thay đổi style css bằng js 
+        var c = document.getElementById('target1');
+        thay đổi style css 
+        c.style.color = 'red';
+        thay đổi thuộc tính css mà nó có 2 word trở lên 
+        background-color =>  c.style.backgroundColor 
+        margin-top => c.style.marginTop
+        
+        ** closest cú pháp chọn lên các thẻ cấp trên ( tổ tiên )
+    </pre>
+
+    <div>
+        <ul id="one" class="level-1">
+            <li class="top-1">Home</li>
+            <li id="ii" class="top-2">Products
+              <ul class="level-2">
+                <li class="category-1">Clothing</li>
+                <li class="category-2">Electronics
+                  <ul class="level-3">
+                    <li class="product-1">Camera</li>
+                    <li class="product-2">Computer</li>
+                    <li class="product-3">Phone</li>
+                  </ul>
+                </li>
+                <li class="category-3">Kitchen</li>
+              </ul>
+            </li>
+            <li class="top-3">About</li>
+          </ul>
+    </div>
+
+    
+
+      <script>
+          // start from the category-1
+            const e = document.querySelector("li.category-1");
+            e.style.color = 'red';
+
+            // highlight the closet element
+            // chọn lên thẻ div cấp trên gần nhất 
+            const closet = e.closest("div");
+            closet.style.border = '1px solid yellow';
+      </script>
+    
+</body>
+</html>

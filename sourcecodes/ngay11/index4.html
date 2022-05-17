@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Siblings lấy theo anh chị em</h1>
+
+    <div>
+        <ul id="one" class="level-1">
+            <li class="top-1">Home</li>
+            <li id="ii" class="top-2">Products
+              <ul class="level-2">
+                <li class="category-1">Clothing</li>
+                <li class="category-2">Electronics
+                  <ul class="level-3">
+                    <li class="product-1">Camera</li>
+                    <li class="product-2">Computer</li>
+                    <li class="product-3">Phone</li>
+                  </ul>
+                </li>
+                <li class="category-3">Kitchen</li>
+              </ul>
+            </li>
+            <li class="top-3">About</li>
+          </ul>
+    </div>
+
+    <script>
+        // lấy theo anh chị em 
+        let element = document.getElementsByClassName("category-2")[0];
+        // lấy anh/chị/em tiếp theo
+        let next = element.nextSibling;
+        console.log(element);
+        console.log(next);
+
+        const getNextSiblings = (e) => {
+            let siblings = [];
+            while (e = e.nextSibling) {
+                siblings.push(e);
+            }
+            return siblings;
+        }
+
+        var t = getNextSiblings(element);
+        console.log(t);
+
+    </script>
+    
+</body>
+</html>
