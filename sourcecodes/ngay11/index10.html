@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <pre>
+        method show() và hide()
+    </pre>
+
+    <div id="demo1" style="width: 100px; height: 100px; background-color: green;"> demo 1</div>
+
+    <button id="show">show</button>
+    <button id="hide">hide</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#show").on("click", function(){
+                $("#demo1").show();
+            });
+
+            $("#hide").on("click", function(){
+                $("#demo1").hide();
+            });
+        });
+    </script>
+</body>
+</html>
