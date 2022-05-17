@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <pre>
+        .innerText == .text()
+        .innerHTML == .html()
+        .value == .val()
+    </pre>
+
+    <h1>get and set jquery</h1>
+
+    <div id="demo1">Văn bản mẫu số 1</div>
+
+    <button id="control1">get 1</button>
+    <button id="control2">set 1</button>
+
+    <div id="demo2">
+        <p>thẻ p trong demo2</p>
+    </div>
+
+    <button id="control3">get 2</button>
+    <button id="control4">set 2</button>
+
+    <br>
+
+    <input type="text" name="demo3" id="demo3" value="124">
+
+    <br>
+    <button id="control5">get 3</button>
+    <button id="control6">set 3</button>
+    <script>
+        $(document).ready(function(){
+            
+            $("#control1").on("click", function(){
+                // get text
+                var t = $("#demo1").text();
+                alert(t);
+            });
+
+            $("#control2").on("click", function(){
+                // set text
+                var t = $("#demo1").text("văn bản được thay đổi");
+            
+            });
+
+            $("#control3").on("click", function(){
+                // get html
+                var t = $("#demo2").html();
+                alert(t);
+            });
+
+            $("#control4").on("click", function(){
+                // set html
+                var t = $("#demo2").html("<a href='#'>thẻ a</a>");
+               
+            });
+
+            $("#control5").on("click", function(){
+                // get html
+                var t = $("#demo3").val();
+                alert(t);
+            });
+
+            $("#control6").on("click", function(){
+                // get html
+                var t = $("#demo3").val(178);
+            });
+        });
+    </script>
+    
+</body>
+</html>
