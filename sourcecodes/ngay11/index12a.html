@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        #demo1 {
+            border: 2px solid orange;
+            padding: 20px;
+        }
+
+        #demo2 {
+            background-color: green;;
+        }
+
+        #hl {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        thêm văn bản hoặc thêm thẻ html
+        append() - Inserts content at the end of the selected elements
+        prepend() - Inserts content at the beginning of the selected elements
+        after() - Inserts content after the selected elements
+        before() - Inserts content before the selected elements
+    </pre>
+
+    <div id="demo1">
+        <p id="demo2">văn bản mặc định</p>
+    </div>
+
+    <button id="append">append</button>
+    <button id="prepend">prepend</button>
+    <button id="after">after</button>
+    <button id="before">before</button>
+
+    <script>
+
+        document.getElementById('append').onclick = function() {
+            const node = document.createElement("p");
+            node.setAttribute("id", "hl");
+            const textnode = document.createTextNode("thẻ p");
+            node.appendChild(textnode);
+            document.getElementById("demo1").appendChild(node);
+        }
+
+        document.getElementById('prepend').onclick = function() {
+            const node = document.createElement("p");
+            node.setAttribute("id", "hl");
+            const textnode = document.createTextNode("thẻ p");
+            node.appendChild(textnode);
+            document.getElementById("demo1").prepend(node);
+        }
+
+        document.getElementById('after').onclick = function() {
+            const node = document.createElement("p");
+            node.setAttribute("id", "hl");
+            const textnode = document.createTextNode("thẻ p");
+            node.appendChild(textnode);
+            document.getElementById("demo1").after(node);
+        }
+
+        document.getElementById('before').onclick = function() {
+            const node = document.createElement("p");
+            node.setAttribute("id", "hl");
+            const textnode = document.createTextNode("thẻ p");
+            node.appendChild(textnode);
+            document.getElementById("demo1").before(node);
+        }
+
+      
+    </script>
+
+
+</body>
+</html>
