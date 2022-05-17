@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        cách gắn trong js thuần 
+        cách 1 gắn thông qua thuộc tính của thẻ onclick , onmousemove ... 
+        cách 2 gắn thông quá thuộc tính trong thẻ html
+        cách 3 gắn thông qua addEventListener("tên sự kiện", "hàm callback")
+    </pre>
+
+    <button id="control1">Control 1</button>
+
+    <button id="control2" onclick="callAbc()">Control 2</button>
+
+    <button id="control3">Control 3</button>
+
+
+
+    <script>
+        document.getElementById("control1").onclick = function() {
+            alert("sự kiện js cách 1");
+        }
+
+        function callAbc() {
+            alert('sự kiện js cách 2');
+        }
+
+        // document.getElementById("control3").addEventListener("tên sự kiện", function(){});
+        document.getElementById("control3").addEventListener("click",function(){
+            alert('sự kiện js cách 3');
+        });
+
+
+
+    </script>
+    
+</body>
+</html>
