@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <pre>
+        sự kiện form 
+    </pre>
+
+    <form id="login" name="login" action="">
+        <div>
+            <label>Username</label>
+            <input type="text" name="username" id="username">
+        </div>
+
+        <div>
+            <label>Mật khẩu</label>
+            <input type="text" name="matkhau" id="matkhau">
+        </div>
+
+        <button>Đăng nhập</button>
+
+    </form>
+
+    <script>
+        $(document).ready(function() {
+          $("form#login").on("submit", function(event){
+               // chặn sự kiện submit mặc định
+               event.preventDefault();
+
+              // document.getElementById("username").value
+
+              var username = $("#username").val();
+              var matkhau = $("#matkhau").val();
+
+              if (username == '' || matkhau == '') {
+                alert("vui lòng nhập đủ username va mat khau");
+              }
+
+              
+             
+          });
+        });
+    </script>
+</body>
+</html>
