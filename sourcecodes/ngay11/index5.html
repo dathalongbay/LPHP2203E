@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <pre>
+        sử dụng thư viện jquery 
+        trang chủ : https://jquery.com/
+
+        document.ready 
+        selector trong jquery 
+
+        1.  selector trong jquery 
+        $("css-selector") 
+        vd chọn theo id $("#idName")
+        vd chọn theo class $(".className")
+        vd chọn theo thẻ $("p")
+        vd chọn theo div có classA : $("div.classA")
+
+        2. document ready 
+        đảm bảo đoạn code bên trong nó sẽ chỉ chạy khi trang đã load xong dom 
+        ví dụ thay đổi 1 hình ảnh trong trang html nhưng khi trang chưa load xong img 
+
+        $(document).ready();
+        trong () của ready chúng ta sẽ truyền hàm vô danh vào đây 
+        function() {}
+        nếu cú pháp của document ready hoàn chỉnh sẽ là 
+        $(document).ready(function() {
+            // code sẽ chạy khi dom được load xong 
+        });
+
+        dom là cấu trúc của các thẻ html 
+    </pre>
+
+    <div id="target1">thẻ div target1</div>
+
+    <script>
+        // có thể sử dụng jquery sau khi đã load thư viện 
+        $(document).ready(function() {
+            // code chạy khi dom được tải xong
+            $("#target1").css("color", "red");
+            $("#target1").css("background-color", "green");
+
+        });
+    </script>
+</body>
+</html>
