@@ -10,10 +10,28 @@
     <pre>
         link tham khảo snippet js :
         https://www.javascripttutorial.net/snippets/
-        
+
         selector bộ chọn javascript 
+        tham khảo tại : https://www.javascripttutorial.net/dom/selecting/
         document.getElementById() chọn theo id của thẻ 
+        https://www.javascripttutorial.net/dom/selecting/selecting-elements-by-class-name/
 
     </pre>
+
+    <div id="container">
+    <p class="note">The first note.</p>
+    <p class="note">The second note.</p>
+    </div>
+    <p class="note">The third note.</p>
+    <script>
+        let elements = document.getElementsByClassName('note');
+
+        console.log(elements);
+
+        for (let i = 0; i < elements.length; i++) {
+            console.log(elements[i].innerHTML);
+        }
+    </script>
+
 </body>
 </html>
