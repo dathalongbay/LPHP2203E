@@ -27,9 +27,15 @@
         console.log('dạng ban đầu');
         console.log(dataJson);
 
+        // chuyển từ json sang js object
         var convertObjJs = JSON.parse(dataJson);
         console.log('chuyển json thanh js object');
         console.log(convertObjJs);
+
+        // chuyển từ object js trở lại json
+        var t = JSON.stringify(convertObjJs);
+        console.log('chuyển ngược lại');
+        console.log(t);
 
     </script>
     
