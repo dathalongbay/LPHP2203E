@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+    <pre>
+        phương thức css() jquery
+        1 - khi ta thay đổi 1 thuộc tính css 
+        selector.css("ten thuoc tinh css", "gia tri");
+        2 - khi ta thay nhiều thuộc tính css 1 lúc 
+        selector.css({"thuoc tinh 1": "gia tri", "thuoc tinh 2": "gia tri"})
+    </pre>
+
+    <div id="target1">
+        target1
+    </div>
+
+    <button id="control1">thay đôi 1 css</button>
+    <button id="control2">thay đổi nhiều css</button>
+
+    <script>
+        $(document).ready(function(){
+            $("#control1").on("click", function(){
+                $("#target1").css("background-color", "green");
+            });
+            $("#control2").on("click", function(){
+                $("#target1").css({"width": "100px","height": "100px","color": "red", "border": "3px solid orange"});
+            });
+          
+        });
+    </script>
+
+</body>
+</html>
