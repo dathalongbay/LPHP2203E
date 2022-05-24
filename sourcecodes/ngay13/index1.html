@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* áp dụng từ 1081px đến vô cực */
+        body {
+            background-color: green;
+        }
+
+        /* xanh - đỏ - tím - vàng */
+        @media screen and (max-width: 1080px) {
+            body {
+                background-color: red;
+            }
+        } /* end của media screen */
+
+        @media screen and (max-width: 880px) {
+            body {
+                background-color: violet;
+            }
+        } /* end của media screen */
+
+        @media screen and (max-width: 680px) {
+            body {
+                background-color: yellow;
+            }
+        } /* end của media screen */
+    </style>
+</head>
+<body>
+    <pre>
+        cú pháp của min-width
+        @media screen and (min-width: 1080px) {
+            /* đoạn css áp dụng màn hình từ 1080px trở lên
+            1080 đến vô cực
+            */
+        }
+
+        sử dụng max-width trong media screen 
+        @media screen and (max-width: 1080px) {
+            /* đoạn css áp dụng màn hình từ 1080px trở xuống 
+            1080px trở xuống 0px 
+            0px -> 1080px 
+            */
+        }
+    </pre>
+
+    <pre>
+        trong file css dùng nhiều media min-width thì chúng ta 
+        viết tăng dần 
+        còn nếu dùng nhiều media max-width thì chúng ta viết giảm dần 
+    </pre>
+</body>
+</html>
