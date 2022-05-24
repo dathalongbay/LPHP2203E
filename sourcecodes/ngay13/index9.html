@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <script src="bootstrap.min.js"></script>
+
+    <style>
+        .row {
+            background-color: orange;
+        }
+
+        .inner {
+            background-color: greenyellow;
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>lưới bootstrap</h1>
+
+    <pre>
+        2 cột = nhau 
+        3 cột = nhau 
+        4 cột = nhau 
+        6 cột = nhau 
+        12 cột = nhau (ít dùng)
+
+        chú ý : tổng độ rộng của các col trong 1 hàng ngang tối đa là 12
+    </pre>
+
+
+    <h1>tạo các column có độ rộng khác nhau</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="inner">
+                    độ rộng 4 phần
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                <div class="inner">
+                    độ rộng 8 phần
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>độ rộng > 12</h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="inner">
+                    độ rộng 4 phần
+                </div>
+            </div>
+
+            <div class="col-sm-9">
+                <div class="inner">
+                    độ rộng 9 phần
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
