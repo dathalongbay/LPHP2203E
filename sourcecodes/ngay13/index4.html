@@ -5,8 +5,233 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .page-layout {
+            width: 100%;
+        }
+
+        .page-layout header {
+            background-color: olive;
+            color: #FFF;
+            height: 200px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .page-layout footer {
+            background-color: orange;
+            color: #FFF;
+            height: 200px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav ul {
+            display: flex;
+            width: 100%;
+            list-style: none;
+            background-color: antiquewhite;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a{
+            display: block;
+            padding: 10px;
+            background-color: antiquewhite;
+            color: green;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            min-height: 600px;
+        }
+
+        .content aside.sidebar-left {
+            width: 25%;
+            background-color: bisque;
+            order: 1;
+        }
+
+        .content aside.sidebar-right {
+            width: 25%;
+            background-color: bisque;
+            order: 3;
+        }
+
+        .content main {
+            width: 50%;
+            background-color: olivedrab;
+            order: 2;
+        }
+
+        main h1 {
+            text-align: center;
+        }
+
+        main .services {
+            display: flex;
+            min-height: 200px;
+            background-color: orange;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+
+        main .services .service-item {
+            width: 23%;
+            background-color: aqua;
+        }
+
+        /* responsive */
+        @media screen and (min-width: 1200px) {
+            /* áp dụng laptop pc 1200 đến vô cực */
+        }
+
+
+        @media screen and (min-width: 320px) and (max-width: 1199px) {
+           /* đoạn code chung của table và mobile */
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                width: 100%;
+                border-bottom: 1px dashed olive;
+            }
+            nav ul li a {
+                display: block;
+                width: 100%;
+                text-align: center;
+                text-decoration: none;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .content main {
+                width: 100%;
+                order: 1;
+                padding: 20px 10px;
+            }
+
+            .content aside.sidebar-left {
+                width: 100%;
+                order: 2;
+                padding: 20px 10px;
+            }
+
+            .content aside.sidebar-right {
+                width: 100%;
+                order: 3;
+                padding: 20px 10px;
+            }
+
+
+            .services {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            main .services .service-item {
+                width: 48%;
+                height: 200px;
+                padding: 10px;
+                margin-top: 10px;
+            }
+        }
+       
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            /* áp dụng máy tính bảng */
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            /* áp dụng mobile */
+            main .services .service-item {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
     
+
+    <div class="page-layout">
+        <header>
+            <h1>Logo trang web</h1>
+
+            <pre>
+                mobile : 320 - 767px 
+                table : 768px - 1199px
+                laptop : 1200px - 1600px 
+                PC : 1601px - vô cực 
+            </pre>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Sản phẩm</a></li>
+                <li><a href="">Liên hệ</a></li>
+                <li><a href="">Đối tác</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <aside class="sidebar-left">
+                <section>Vùng sidebar 1</section>
+                <section>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius similique eligendi beatae fugit laudantium ipsa libero, nesciunt iste culpa molestiae ratione. Nam incidunt aperiam pariatur error totam accusamus tempora deleniti?</p>
+                </section>
+            </aside>
+
+            <aside class="sidebar-right">
+                <section>Vùng sidebar 2</section>
+                <section>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius similique eligendi beatae fugit laudantium ipsa libero, nesciunt iste culpa molestiae ratione. Nam incidunt aperiam pariatur error totam accusamus tempora deleniti?</p>
+                </section>
+            </aside>
+
+            <main class="main-content">
+                <h1>Services</h1>
+                <section class="services">
+                    <div class="service-item">
+                        <h3>IT soft</h3>
+                    </div>
+                    <div class="service-item">
+                        <h3>IT hardware</h3>
+                    </div>
+                    <div class="service-item">
+                        <h3>IT helpdesk</h3>
+                    </div>
+                    <div class="service-item">
+                        <h3>IT ...</h3>
+                    </div>
+                </section>
+
+                <section>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae inventore totam voluptas, necessitatibus deleniti, adipisci saepe veniam, animi repudiandae minima aperiam. Rem numquam sed harum beatae deleniti, maxime exercitationem aspernatur?</p>
+                
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae inventore totam voluptas, necessitatibus deleniti, adipisci saepe veniam, animi repudiandae minima aperiam. Rem numquam sed harum beatae deleniti, maxime exercitationem aspernatur?</p>
+                </section>
+
+            </main>
+        </div> <!-- end .content -->
+
+        <footer>
+            <h5>copyright @ 2022</h5>
+        </footer>
+    </div>
+
+   
 </body>
 </html>
