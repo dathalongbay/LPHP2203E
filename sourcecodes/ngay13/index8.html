@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <script src="bootstrap.min.js"></script>
+
+    <style>
+        .target1 {
+            background-color: orange;
+        }
+        .target1 .row {
+            background-color: olive;
+        }
+        .target1 .col {
+            height: 300px;
+            background-color: green;
+        }
+        
+        .target2 {
+            background-color: orange;
+        }
+        .target2 .inner {
+            height: 200px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        lưới của bootstrap 
+        - container ( khung chứa bên ngoài cùng )
+        - trong container có các hàng ngang ( class .row )
+        - các cột dọc trong các .row có class tiền tố .col-* 
+    </pre>
+
+    <div class="container target1">
+        <div class="row">
+            <!-- bootstrap tự xử lý layout với 3 cột = nhau -->
+            <div class="col">col 1</div>
+            <div class="col">col 2</div>
+            <div class="col">col 3</div>
+        </div>
+
+    </div>
+
+    <h1>container-fluid</h1>
+
+    <div class="container-fluid target1">
+        <div class="row">
+            <!-- bootstrap tự xử lý layout với 3 cột = nhau -->
+            <div class="col">col 1</div>
+            <div class="col">col 2</div>
+            <div class="col">col 3</div>
+        </div>
+
+    </div>
+
+    <h1>dùng col-sm-*</h1>
+
+    <div class="container target2">
+        <div class="row">
+            <!-- bootstrap tự xử lý layout với 3 cột = nhau -->
+            <div class="col-sm-4">
+                <div class="inner">1</div>
+            </div>
+            <div class="col-sm-4">
+                <div class="inner">2</div>
+            </div>
+            <div class="col-sm-4">
+                <div class="inner">3</div>
+            </div>
+        </div>
+    </div>
+
+    <h1>giao diện 4 cột </h1>
+
+    <div class="container target2">
+        <div class="row">
+            <!-- bootstrap tự xử lý layout với 3 cột = nhau -->
+            <div class="col-sm-3">
+                <div class="inner">1</div>
+            </div>
+            <div class="col-sm-3">
+                <div class="inner">2</div>
+            </div>
+            <div class="col-sm-3">
+                <div class="inner">3</div>
+            </div>
+            <div class="col-sm-3">
+                <div class="inner">3</div>
+            </div>
+        </div>
+    </div>
+
+    <h1>giao diện 2 cột = nhau </h1>
+
+    <div class="container target2">
+        <div class="row">
+            <!-- bootstrap tự xử lý layout với 3 cột = nhau -->
+            <div class="col-sm-6">
+                <div class="inner">1</div>
+            </div>
+            <div class="col-sm-6">
+                <div class="inner">2</div>
+            </div>
+        </div>
+    </div>
+
+    <h1>giao diện 6 cột = nhau</h1>
+
+    <div class="container target2">
+        <div class="row">
+            <!-- bootstrap tự xử lý layout với 3 cột = nhau -->
+            <div class="col-sm-2">
+                <div class="inner">1</div>
+            </div>
+            <div class="col-sm-2">
+                <div class="inner">2</div>
+            </div>
+            <div class="col-sm-2">
+                <div class="inner">2</div>
+            </div>
+            <div class="col-sm-2">
+                <div class="inner">2</div>
+            </div>
+            <div class="col-sm-2">
+                <div class="inner">2</div>
+            </div>
+            <div class="col-sm-2">
+                <div class="inner">2</div>
+            </div>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>
