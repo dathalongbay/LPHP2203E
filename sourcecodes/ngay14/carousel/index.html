@@ -12,10 +12,11 @@
 
     <style>
         .intro-btn {
-            background-color: white;
+            background-color: red;
             width: 50px;
             height: 50px;
             border-radius: 50%;
+            top: calc(50% - 25px);
         }
     </style>
 </head>
@@ -46,10 +47,10 @@
                     </div>
 
                     <!-- Left and right controls/icons -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#intro" data-bs-slide="prev">
+                    <button class="carousel-control-prev intro-btn" type="button" data-bs-target="#intro" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon"></span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#intro" data-bs-slide="next">
+                    <button class="carousel-control-next intro-btn" type="button" data-bs-target="#intro" data-bs-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </button>
                 </section>
