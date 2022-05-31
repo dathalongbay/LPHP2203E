@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <script src="bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <h1 class="text-center">Thêm sinh viên</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <form action="" method="get" name="themsinhvien">
+                    <div class="mb-3">
+                        <label for="" class="form-label">Tên sinh viên</label>
+                        <input type="text" class="form-control" name="ten" value="">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="" class="form-label">SDT sinh viên</label>
+                        <input type="text" class="form-control" name="phone" value="">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="" class="form-label">Năm học</label>
+                        <select class="form-select" name="year">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="" class="form-label">Ghi chú</label>
+                        <textarea class="form-control" rows="5" id="ghichu" name="text"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="" class="form-label">Gioi tính</label>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="gioitinh1" name="optradio" value="option1" checked>Nam
+                            <label class="form-check-label" for="gioitinh1"></label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="gioitinh2" name="optradio" value="option2">Nữ
+                            <label class="form-check-label" for="gioitinh2"></label>
+                          </div>
+                    </div>
+                   
+                    <div class="mb-3">
+                        <a href="" class="btn btn-info">Lưu</a>
+                        <a href="index.html" class="btn btn-danger">Quay lại</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
