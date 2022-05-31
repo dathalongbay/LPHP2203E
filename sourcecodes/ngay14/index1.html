@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <script src="bootstrap.min.js"></script>
+    <style>
+        .row {
+            background-color: orange;
+        }
+
+        .inner {
+            background-color: greenyellow;
+            min-height: 200px;
+        }
+
+        .intro {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        tạo ra 1 giao diện cho nhiều loại màn hình
+        ví dụ trên mobile hiển thi 1 cột 
+        trên table hiển thị 2 cột 
+        trên laptop trở lên hiển thị 4 cột
+    </pre>
+
+    <div class="container">
+        <div class="row">
+            <div class="intro col-sm-12 col-md-6 col-lg-3"> 
+                <div class="inner">
+                    Cột 1 
+                </div>
+            </div>
+            <div class="intro col-sm-12 col-md-6 col-lg-3"> 
+                <div class="inner">
+                    Cột 2
+                </div>
+            </div>
+            <div class="intro col-sm-12 col-md-6 col-lg-3"> 
+                <div class="inner">
+                    Cột 3
+                </div>
+            </div>
+            <div class="intro col-sm-12 col-md-6 col-lg-3"> 
+                <div class="inner">
+                    Cột 4
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
