@@ -8,6 +8,10 @@
 </head>
 <body>
     <?php echo "hello php"; ?>
+
+    <pre>
+        giải pháp tạm thời : http://phptester.net/
+    </pre>
     
 </body>
 </html>
