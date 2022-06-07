@@ -16,7 +16,7 @@
 
     <?php
     $cities = [];
-    $cities["hn"] = ["ten" => "hà nội", "quan" => ["tây hồ", "hoàn kiếm", "hai bà trưng"]];
+    $cities["hn"] = ["ten" => "ha noi", "quan" => ["tây hồ", "hoàn kiếm", "hai bà trưng"]];
     $cities["hcm"] = ["ten" => "hồ chí minh", "quan" => ["quận 1", "thủ đức", "quận 7"]];
     $cities["dn"] = ["ten" => "đà nẵng", "quan" => ["liên chiểu", "hải châu"]];
 
@@ -27,21 +27,24 @@
     // duyệt mảng đa chiều
     echo "<ul>";
     foreach ($cities as $indexCity => $city) {
-       /* echo "<pre>";
-        print_r($city);
-        echo "</pre>";*/
-        echo "<li>" . $city['ten'] ;
-            echo "<ul>";
-            foreach ($city['quan'] as $indexDistrict => $district) {
-                /* echo "<pre>";
-               print_r($district);
-               echo "</pre>";*/
-                echo "<li>" . $district . "</li>";
-            }
-            echo "</ul>";
-        echo "</li>";
+
+        $cities[$indexCity]['ten'] = strtoupper($city['ten']);
+
+        foreach ($city['quan'] as $indexDistrict => $district) {
+        /*    echo "<pre>";
+            print_r( $cities[$indexCity]['quan'][$indexDistrict]);
+            echo "</pre>";*/
+             // exit; die;
+            $cities[$indexCity]['quan'][$indexDistrict] = strtoupper($district);
+
+        }
+
     }
-    echo "</ul>";
+
+    echo "<h1>sau khi chạy xong vòng lặp</h1>";
+    echo "<pre>";
+    print_r($cities);
+    echo "</pre>";
     ?>
 
 </body>

@@ -10,10 +10,8 @@
 <body>
 
     <pre>
-       em hay viết vòng lặp thay thế các giá trị tên thành phố và tên quận
-        thành chữ viết hoa
-        ví dụ : hà nội => HÀ NỘI
-        gợi ý gán lại mảng đa chiều $tenMang[keyCap1][keyCap2] = giá trị mới
+        mảng lồng mảng
+        mỗi phần tử bên trong của nó lại là 1 mảng
     </pre>
 
     <?php
@@ -26,7 +24,24 @@
     print_r($cities);
     echo "</pre>";
 
-
+    // duyệt mảng đa chiều
+    echo "<ul>";
+    foreach ($cities as $indexCity => $city) {
+        /* echo "<pre>";
+         print_r($city);
+         echo "</pre>";*/
+        echo "<li>" . $city['ten'] ;
+        echo "<ul>";
+        foreach ($city['quan'] as $indexDistrict => $district) {
+            /* echo "<pre>";
+           print_r($district);
+           echo "</pre>";*/
+            echo "<li>" . $district . "</li>";
+        }
+        echo "</ul>";
+        echo "</li>";
+    }
+    echo "</ul>";
     ?>
 
 </body>
