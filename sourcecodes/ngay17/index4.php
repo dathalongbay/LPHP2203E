@@ -46,8 +46,8 @@
         echo "giá trị $a";
     }
 
-    if (!$a) { // ! phủ đinh ngược ( a == false ) hoặc a == 0 hoặc a == null hoặc a == '' thì mới chạy vào bên trong 
-        echo "giá trị $a";
+    if (!$a) { // ! phủ đinh ngược ( a == false ) hoặc a == 0 hoặc a == null hoặc a == '' thì mới chạy vào bên trong
+        echo "giá trị $a với !";
     }
 
 
