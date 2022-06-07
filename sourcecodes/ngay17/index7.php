@@ -15,7 +15,19 @@
     // dùng vòng lặp để thay thế giá trị của các phần tử trong mảng trên
     // thành dạng bình phương
     // ví dụ 2 mũ 2 , 3 mũ 2 => [4,9,... ]
-    // chú ý ko tạo mảng mới mà dùng cách gán lại giá trị thông quan index của phần tử đó 
+    // chú ý ko tạo mảng mới mà dùng cách gán lại giá trị thông quan index của phần tử đó
+
+    echo "<pre>";
+    print_r($target);
+    echo "</pre>";
+
+    foreach($target as $index => $value) {
+        $target[$index] = $value*$value;
+    }
+
+    echo "<pre>";
+    print_r($target);
+    echo "</pre>";
 
     ?>
 
