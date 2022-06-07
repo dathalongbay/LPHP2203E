@@ -28,14 +28,14 @@
     echo "<ul>";
     foreach ($cities as $indexCity => $city) {
 
-        $cities[$indexCity]['ten'] = strtoupper($city['ten']);
+        $cities[$indexCity]['ten'] = mb_strtoupper($city['ten']);
 
         foreach ($city['quan'] as $indexDistrict => $district) {
         /*    echo "<pre>";
             print_r( $cities[$indexCity]['quan'][$indexDistrict]);
             echo "</pre>";*/
              // exit; die;
-            $cities[$indexCity]['quan'][$indexDistrict] = strtoupper($district);
+            $cities[$indexCity]['quan'][$indexDistrict] = mb_strtoupper($district);
 
         }
 
