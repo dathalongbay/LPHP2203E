@@ -17,8 +17,30 @@
     <?php 
     $a = 5;
     $b = 25;
-    // in ra tổng các số từ $a đến $b 
-    // in ra tích các số từ $a đến $b 
+    // in ra tổng các số từ $a đến $b
+    // 5 + 6 + 7 + 8 + ... + 25
+    // in ra tích các số từ $a đến $b
+    // 5 * 6 * 7 * 8 * ... * 25
     ?>
+
+    <?php
+    $tong = 0;
+    $tich = 1;
+    for($i = $a; $i <= $b;$i++) {
+        echo "<p>$i</p>";
+        $tong = $tong + $i;
+        // $tong += $i;
+        $tich = $tich * $i;
+        // $tich *= $i;
+        
+
+    }
+
+    echo "<br> Tổng : " . $tong;
+    echo "<br> Tích : " . $tich;
+
+    ?>
+
+
 </body>
 </html>
