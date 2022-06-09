@@ -11,7 +11,6 @@
 
     <?php
     $target = [2,3,4,5,6];
-
     // dùng vòng lặp để thay thế giá trị của các phần tử trong mảng trên
     // thành dạng bình phương
     // ví dụ 2 mũ 2 , 3 mũ 2 => [4,9,... ]
