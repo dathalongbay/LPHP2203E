@@ -13,7 +13,6 @@
         mảng lồng mảng
         mỗi phần tử bên trong của nó lại là 1 mảng
     </pre>
-
     <?php
     $cities = [];
     $cities["hn"] = ["ten" => "ha noi", "quan" => ["tây hồ", "hoàn kiếm", "hai bà trưng"]];
