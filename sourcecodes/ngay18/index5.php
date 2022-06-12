@@ -8,6 +8,13 @@
     <title>Document</title>
 </head>
 <body>
+
+<pre>
+    trong thời gian chúng ta 2 loại
+    - loại 1 : human time ( người đọc được) nhìn vào biết được đó là ngày giờ bao nhiều ví dụ : 2022-1-1 12:24:00 chỉ có ý nghĩa hiển thị
+    - loại 2 : timestamp ( tính toán ) cộng trừ được ( mili giây tính từ 1.1.1970 )
+    1 giây = 1000 ms
+</pre>
     <?php
     // lấy ra thời gian hiện tại
     $d = date("d/m/Y H:i:s");
@@ -25,6 +32,10 @@
     var_dump($d3);
     echo "<br>";
     var_dump($d4);
+
+    // in ra thời gian hiện tại theo timestamp
+    $now = time();
+    echo "thoi gian hien tai timestamp : " . time();
     ?>
 </body>
 </html>
