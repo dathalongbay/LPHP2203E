@@ -29,6 +29,10 @@
         include thất bại khi không tim thấy file hay do 1 lý do khác thì include vẫn chạy tiếp mặc dù có báo lỗi warning
         nhưng require nếu không tìm thấy file để nạp thì sẽ gặp lỗi fatal error và chương trình ngừng chạy ngay lập tức
 
+        so sánh require và require_once
+        require gọi bao nhiêu lần nạp bấy nhiêu lần
+        require_once chỉ nạp 1 lần duy nhất dù gọi bao nhiêu lần
+
     </pre>
 
 </body>
