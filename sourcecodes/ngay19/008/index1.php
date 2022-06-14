@@ -40,7 +40,7 @@
 
 </pre>
 
-<form action="upload-manager.php" method="post" enctype="multipart/form-data">
+<form action="upload2.php" method="post" enctype="multipart/form-data">
     <h2>Upload File</h2>
     <label for="fileSelect">Filename:</label>
     <input type="file" name="photo" id="fileSelect">
