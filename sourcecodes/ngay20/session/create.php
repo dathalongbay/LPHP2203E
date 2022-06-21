@@ -24,6 +24,8 @@
     ?>
 
     <a href="getsession.php">Xem session ở 1 file khác</a>
+    <a href="delete.php">Xóa session ở 1 file khác</a>
+    <a href="destroy.php">Xóa ALL session ở 1 file khác</a>
 
 </body>
 </html>
