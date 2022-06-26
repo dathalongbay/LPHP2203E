@@ -27,7 +27,7 @@
         if (!isset($_POST['hoten'])) {
             $errors['hoten'] = "Chưa nhập họ tên";
         } else {
-            $regexHoten = '/^([a-z]{2,7}){0,1}( [a-z]{2,7}){1,4}$/';
+            $regexHoten = '/^([a-z]{2,7}){1}( [a-z]{2,7}){1,4}$/';
             $stringHoten = $_POST['hoten'];
             if (!preg_match($regexHoten, $stringHoten)) {
                 $errors['hoten'] = "Họ tên không hợp lệ";
@@ -57,7 +57,8 @@
 
     <div>
         <h1>https://regex101.com/</h1>
-        <form action="" name=dang_ky" method="post">
+        <h1>https://www.tutorialrepublic.com/javascript-tutorial/javascript-regular-expressions.php</h1>
+        <form action="" name="dang_ky" method="post">
             <p>
                 <label>Họ tên *</label>
                 <span>Họ tên phải từ 2 từ đến 5 từ . tên là chữ không có số và không có ký tự đặc biệt như @ ! ...</span>
@@ -94,11 +95,35 @@
             </p>
 
             <p>
-                <input type="submit" name="send" value="Đăng ký">
+                <input type="submit" name="send" id="send" value="Đăng ký">
             </p>
 
         </form>
     </div>
+
+    <script>
+        document.getElementById("send").onclick = function() {
+
+            var hoten = document.forms["dang_ky"]["hoten"].value;
+            var regexHoten = /^([a-z]{2,7}){0,1}( [a-z]{2,7}){1,4}$/;
+            var errors = [];
+
+            // Test the string against the regular expression
+            if(!regexHoten.test(hoten)) {
+                alert("Họ tên không hợp lệ");
+                errors.push("Họ tên không hợp lệ");
+            }
+
+            console.log(errors);
+
+            if (errors.length) {
+                // ngăn form submit dữ liệu đi
+                return false;
+            }
+
+
+        }
+    </script>
 
 </body>
 </html>
