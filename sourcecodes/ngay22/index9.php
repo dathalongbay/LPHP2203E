@@ -56,3 +56,10 @@ $student2->getInfo();
 // object Xe có biển số 30A - 12345
 // class ConMeo
 // object ConMeo có lông đen , ConMeo có lông trắng
+
+// dùng từ khóa instanceof kiểm tra biến có phải object của class đó không
+$a = 1;
+echo "<br>";
+var_dump($a instanceof Student);
+echo "<br>";
+var_dump($student2 instanceof Student);
