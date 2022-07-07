@@ -14,4 +14,18 @@ Classes can implement an interface while inheriting from another class at the sa
  * 3 - classA extends abstractClassName implements interfaceName .
  *
  * => khi nào dùng abstract class và khi nào dùng interface .
+ * abstract class ( là gì )
+ * interface ( làm gì )
+ *
+ * abstract class DongVat {
+ *  public function thongTin();
+ * }
+ *
+ * interface HanhDong {
+        public function diChuyen();
+        public function sinhSan();
+ * }
+ *
+ * class ConMeo extends DongVat implements HanhDong {}
+ *
  */
