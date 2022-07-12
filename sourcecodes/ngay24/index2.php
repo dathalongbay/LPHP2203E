@@ -4,3 +4,4 @@
  * https://github.com/PHPOffice/PhpSpreadsheet
  *
  */
+phpinfo();
