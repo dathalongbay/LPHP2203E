@@ -1,4 +1,5 @@
 <?php
+// Dat\demoClass
 namespace Dat;
 class demoClass {
     public $a = 1;
