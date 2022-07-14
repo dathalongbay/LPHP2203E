@@ -2,7 +2,7 @@
 ```
 với các thuộc tính sau :
 1 - trạng thái upload ( thành công hay thất bại)
-2 - các lỗi xảy ra trong khi upload như file quá lớn, file đã tồn tại, file size định dạng cho phép
+2 - các lỗi xảy ra trong khi upload như file quá lớn, file đã tồn tại, file sai định dạng cho phép
 3 - định dạng cho phép (pdf/word/png ...) dạng mảng 
 4 - kích thước file tối đa ( filesize )
 5 - thư mục upload 
