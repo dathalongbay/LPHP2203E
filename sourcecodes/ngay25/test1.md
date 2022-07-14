@@ -8,7 +8,7 @@ với các thuộc tính sau :
 5 - thư mục upload 
 6 - input file name 
 và các phương thức sau :
-1 - constructor với các param truyền vào ( định dạng cho phép , kích thước tối đa filesize, thư mục upload )
+1 - constructor với các param truyền vào ( tên file upload, định dạng cho phép , kích thước tối đa filesize, thư mục upload )
 2 - kiểm tra file đã tồn tại hay chưa ?
 3 - kiểu tra kích thước file có hợp lệ hay không ?
 4 - Kiểm tra định dạng file có hợp lệ hay không ?
