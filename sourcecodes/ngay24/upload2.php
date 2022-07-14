@@ -15,8 +15,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $filetype = $_FILES["photo"]["type"];
         $filesize = $_FILES["photo"]["size"];
 
-
-
         // Verify file extension
         $ext = pathinfo($filename, PATHINFO_EXTENSION);
         // array_key_exists kiểm tra 1 key có tồn tại trong mảng hay không
