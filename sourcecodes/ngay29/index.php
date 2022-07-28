@@ -21,6 +21,9 @@ $books = $statement->fetchAll(PDO::FETCH_ASSOC);
 <div class="container mt-3">
     <h2>Basic Table</h2>
     <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>
+    <p>
+        <a href="add.php" class="btn btn-info">Thêm sách</a>
+    </p>
     <table class="table">
         <thead>
         <tr>
@@ -29,6 +32,7 @@ $books = $statement->fetchAll(PDO::FETCH_ASSOC);
             <th>Giá tiên</th>
             <th>Thời gian xuất bản</th>
             <th>Tác giả</th>
+            <th>Hành động</th>
         </tr>
         </thead>
         <tbody>
@@ -43,6 +47,10 @@ $books = $statement->fetchAll(PDO::FETCH_ASSOC);
                     <td><?php echo $book['book_price'] ?></td>
                     <td><?php echo $book['book_created'] ?></td>
                     <td><?php echo $book['author_name'] ?></td>
+                    <td>
+                        <a href="edit.php" class="btn btn-warning">Sửa sách</a>
+                        <a href="delete.php" class="btn btn-danger">Xóa sách</a>
+                    </td>
                 </tr>
                 <?php
             }
