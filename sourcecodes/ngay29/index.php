@@ -1,7 +1,7 @@
 <?php
 include_once "connect.php";
 
-$sql = 'SELECT b.*,a.author_name FROM books as b LEFT JOIN `authors` as a ON b.book_author = a.author_id ';
+$sql = 'SELECT b.*,a.author_name FROM books as b LEFT JOIN `authors` as a ON b.book_author = a.author_id ORDER BY b.book_created DESC LIMIT 0,50';
 $statement = $pdo->query($sql);
 $books = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
