@@ -1,14 +1,25 @@
 <?php
 include_once "connect.php";
 
-$bookId = isset($_GET['id']) ? (int) $_GET['id'] : 0;
+$bookId = isset($_GET['id']) ? $_GET['id'] : 0;
 
 // lấy bản ghi tương đương id này trong bảng books để fill tất cả dữ liệu
 // vào trong các ô input bên dưới
+$sqlBook = 'SELECT * FROM books WHERE book_id = :book_id';
 
-$sql = 'SELECT * FROM authors';
-$statement = $pdo->query($sql);
-$authors = $statement->fetchAll(PDO::FETCH_ASSOC);
+$statementBook = $pdo->prepare($sqlBook);
+$statementBook->bindParam(':book_id', $bookId, PDO::PARAM_INT);
+$statementBook->execute();
+$book = $statementBook->fetch(PDO::FETCH_ASSOC);
+
+echo "<pre>";
+print_r($book);
+echo "</pre>";
+
+
+$sqlAuthor = 'SELECT * FROM authors';
+$statementAuthor = $pdo->query($sqlAuthor);
+$authors = $statementAuthor->fetchAll(PDO::FETCH_ASSOC);
 ?>
 
 <!doctype html>
@@ -31,7 +42,7 @@ $authors = $statement->fetchAll(PDO::FETCH_ASSOC);
     <form name="add-book" method="post" action="">
         <div class="mb-3 mt-3">
             <label for="email" class="form-label">Tên sách:</label>
-            <input type="text" class="form-control" id="book_title" placeholder="Tên sách" name="book_title">
+            <input type="text" class="form-control" id="book_title" placeholder="Tên sách" name="book_title" value="">
         </div>
 
         <div class="mb-3 mt-3">
