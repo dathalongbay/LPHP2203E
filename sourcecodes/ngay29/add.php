@@ -1,3 +1,11 @@
+<?php
+include_once "connect.php";
+
+$sql = 'SELECT * FROM authors';
+$statement = $pdo->query($sql);
+$authors = $statement->fetchAll(PDO::FETCH_ASSOC);
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -45,7 +53,16 @@
             <label for="email" class="form-label">Tác giả:</label>
             <select class="form-select" name="book_author" id="book_author">
                 <option value="">chọn tác giả</option>
-                <option value="1">nguyên tuân</option>
+                <?php
+                if (is_array($authors) && !empty($authors)) {
+                    foreach ($authors as $author) {
+                        ?>
+                        <option value="<?php echo $author['author_id'] ?>"><?php echo $author['author_name'] ?></option>
+                        <?php
+                    }
+                }
+                ?>
+
             </select>
         </div>
 
