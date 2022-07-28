@@ -4,9 +4,6 @@ include_once "connect.php";
 $sql = 'SELECT * FROM books';
 $statement = $pdo->query($sql);
 $books = $statement->fetchAll(PDO::FETCH_ASSOC);
-echo "<pre>";
-print_r($books);
-echo "</pre>";
 ?>
 <!doctype html>
 <html lang="en">
@@ -35,21 +32,25 @@ echo "</pre>";
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-        </tr>
-        <tr>
-            <td>Mary</td>
-            <td>Moe</td>
-            <td>mary@example.com</td>
-        </tr>
-        <tr>
-            <td>July</td>
-            <td>Dooley</td>
-            <td>july@example.com</td>
-        </tr>
+
+        <?php
+        if (is_array($books) && !empty($books)) {
+            foreach ($books as $book) {
+                ?>
+                <tr>
+                    <td><?php echo $book['book_id'] ?></td>
+                    <td><?php echo $book['book_title'] ?></td>
+                    <td><?php echo $book['book_price'] ?></td>
+                    <td><?php echo $book['book_created'] ?></td>
+                    <td><?php echo $book['book_author'] ?></td>
+                </tr>
+                <?php
+            }
+        }
+        ?>
+
+
+
         </tbody>
     </table>
 </div>
