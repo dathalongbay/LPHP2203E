@@ -48,8 +48,8 @@ $books = $statement->fetchAll(PDO::FETCH_ASSOC);
                     <td><?php echo $book['book_created'] ?></td>
                     <td><?php echo $book['author_name'] ?></td>
                     <td>
-                        <a href="edit.php" class="btn btn-warning">Sửa sách</a>
-                        <a href="delete.php" class="btn btn-danger">Xóa sách</a>
+                        <a href="edit.php?id=<?php echo $book['book_id'] ?>" class="btn btn-warning">Sửa sách</a>
+                        <a href="delete.php?id=<?php echo $book['book_id'] ?>" class="btn btn-danger">Xóa sách</a>
                     </td>
                 </tr>
                 <?php
