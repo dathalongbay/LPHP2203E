@@ -1,7 +1,7 @@
 <?php
 include_once "connect.php";
 
-$sql = 'SELECT * FROM books';
+$sql = 'SELECT b.*,a.author_name FROM books as b LEFT JOIN `authors` as a ON b.book_author = a.author_id ';
 $statement = $pdo->query($sql);
 $books = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
@@ -42,7 +42,7 @@ $books = $statement->fetchAll(PDO::FETCH_ASSOC);
                     <td><?php echo $book['book_title'] ?></td>
                     <td><?php echo $book['book_price'] ?></td>
                     <td><?php echo $book['book_created'] ?></td>
-                    <td><?php echo $book['book_author'] ?></td>
+                    <td><?php echo $book['author_name'] ?></td>
                 </tr>
                 <?php
             }
