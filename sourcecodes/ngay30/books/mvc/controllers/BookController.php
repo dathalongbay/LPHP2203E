@@ -42,6 +42,10 @@ class BookController {
         $bookId = isset($_GET['id']) ? intval($_GET['id']) : 0;
         $book = $model->fetchOne($bookId);
 
+        // @todo
+        // gợi ý tạo thêm 1 AuthorModel để lấy các tác giả ra
+        // $authors = AuthorModel->fetchAll();
+
         include_once 'mvc/views/book/edit.php';
     }
 
@@ -53,8 +57,7 @@ class BookController {
         echo "</pre>";
 
         $model = new BookModel();
-        $model->update($_POST);
-        exit;
+        return $model->update($_POST);
     }
 
     /*
