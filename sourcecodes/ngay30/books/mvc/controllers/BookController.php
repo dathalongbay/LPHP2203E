@@ -1,6 +1,8 @@
 <?php
 namespace MVC\Controllers;
 
+use MVC\Models\BookModel;
+
 class BookController {
 
     /*
@@ -8,7 +10,12 @@ class BookController {
      * */
     public function indexAction() {
         echo '<br>' . __METHOD__;
-        exit;
+
+        $model = new BookModel();
+        $books = $model->fetchAll();
+
+        include_once 'mvc/views/book/index.php';
+
     }
 
     /*
@@ -42,7 +49,7 @@ class BookController {
      * trả về view xóa book
      * */
     public function deleteAction(){
-        echo '<br>' . __METHOD__;
+        echo '<br> abc ' . __METHOD__;
         exit;
     }
 
