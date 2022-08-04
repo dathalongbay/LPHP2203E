@@ -37,11 +37,23 @@ class BookController {
      */
     public function editAction(){
         echo '<br>' . __METHOD__;
-        exit;
+
+        $model = new BookModel();
+        $bookId = isset($_GET['id']) ? intval($_GET['id']) : 0;
+        $book = $model->fetchOne($bookId);
+
+        include_once 'mvc/views/book/edit.php';
     }
 
     public function updateAction(){
         echo '<br>' . __METHOD__;
+
+        echo "<pre>";
+        print_r($_POST);
+        echo "</pre>";
+
+        $model = new BookModel();
+        $model->update($_POST);
         exit;
     }
 

@@ -1,4 +1,5 @@
 <?php
+session_start();
 // index.php thuộc namespace toàn cục
 
 // https://domain.com

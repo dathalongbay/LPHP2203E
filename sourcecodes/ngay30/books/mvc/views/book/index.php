@@ -15,7 +15,7 @@
     <h2>Basic Table</h2>
     <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p>
     <p>
-        <a href="add.php" class="btn btn-info">Thêm sách</a>
+        <a href="<?php echo SITE_URL ?>?controller=book&action=add" class="btn btn-info">Thêm sách</a>
     </p>
     <table class="table">
         <thead>
@@ -41,8 +41,8 @@
                     <td><?php echo $book['book_created'] ?></td>
                     <td><?php echo $book['author_name'] ?></td>
                     <td>
-                        <a href="edit.php?id=<?php echo $book['book_id'] ?>" class="btn btn-warning">Sửa sách</a>
-                        <a href="delete.php?id=<?php echo $book['book_id'] ?>" class="btn btn-danger">Xóa sách</a>
+                        <a href="<?php echo SITE_URL ?>?controller=book&action=edit&id=<?php echo $book['book_id'] ?>" class="btn btn-warning">Sửa sách</a>
+                        <a href="<?php echo SITE_URL ?>?controller=book&action=delete&id=<?php echo $book['book_id'] ?>" class="btn btn-danger">Xóa sách</a>
                     </td>
                 </tr>
                 <?php
